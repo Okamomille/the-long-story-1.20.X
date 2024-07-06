@@ -13,6 +13,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.world.World;
+import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
 
@@ -64,7 +65,7 @@ public class RathEntity extends PassiveEntity {
     @Nullable
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        return null;
+        return ModEntities.RATH.create(world);
     }
 
     public static DefaultAttributeContainer.Builder createRathAttributes(){

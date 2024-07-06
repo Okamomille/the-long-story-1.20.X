@@ -57,7 +57,7 @@
         "type": "thelongstory:bumbo",
         "maxCount": 3,
         "minCount": 2,
-        "weight": 10
+        "weight": 13
       }
     ],
     "misc": [],

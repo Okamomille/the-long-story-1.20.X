@@ -55,9 +55,15 @@
     "creature": [
       {
         "type": "thelongstory:tooki",
-        "maxCount": 4,
+        "maxCount": 5,
         "minCount": 1,
-        "weight": 10
+        "weight": 15
+      },
+      {
+        "type": "thelongstory:rath",
+        "maxCount": 3,
+        "minCount": 2,
+        "weight": 12
       }
     ],
     "misc": [],
