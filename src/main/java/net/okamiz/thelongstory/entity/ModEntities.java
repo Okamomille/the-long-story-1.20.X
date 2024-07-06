@@ -35,6 +35,11 @@ public class ModEntities {
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE,TookiEntity::new)
                     .dimensions(EntityDimensions.fixed(0.55f,0.5f)).build());
 
+    public static final EntityType<RathEntity> RATH = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TheLongStory.MOD_ID, "rath"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE,RathEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.8f,1f)).build());
+
     public static final EntityType<BumboEntity> BUMBO = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(TheLongStory.MOD_ID, "bumbo"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE,BumboEntity::new)

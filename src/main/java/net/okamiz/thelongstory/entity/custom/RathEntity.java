@@ -3,41 +3,25 @@ package net.okamiz.thelongstory.entity.custom;
 import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.mob.AbstractSkeletonEntity;
 import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
-import net.minecraft.entity.passive.TurtleEntity;
-import net.minecraft.entity.passive.WolfEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.DyeItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.DyeColor;
-import net.minecraft.util.Hand;
 import net.minecraft.world.World;
-import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.UUID;
-
-public class BumboEntity extends PassiveEntity {
+public class RathEntity extends PassiveEntity {
 
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
 
-    public BumboEntity(EntityType<? extends PassiveEntity> entityType, World world) {
+    public RathEntity(EntityType<? extends PassiveEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -83,29 +67,29 @@ public class BumboEntity extends PassiveEntity {
         return null;
     }
 
-    public static DefaultAttributeContainer.Builder createBumboAttributes(){
+    public static DefaultAttributeContainer.Builder createRathAttributes(){
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.18F)
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 1.0)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 10.0)
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 32.0);
     }
 
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {
-        return ModSounds.BUMBO_AMBIENT;
+        return ModSounds.RATH_AMBIENT;
     }
 
     @Nullable
     @Override
     protected SoundEvent getHurtSound(DamageSource source) {
-        return ModSounds.BUMBO_HURT;
+        return ModSounds.RATH_HURT;
     }
 
     @Nullable
     @Override
     protected SoundEvent getDeathSound() {
-        return ModSounds.BUMBO_DEATH;
+        return ModSounds.RATH_DEATH;
     }
 
 }

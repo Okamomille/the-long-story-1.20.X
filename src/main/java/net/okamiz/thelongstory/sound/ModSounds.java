@@ -21,6 +21,14 @@ public class ModSounds {
     public static final SoundEvent BREEDY_HURT = registerSoundEvent("breedy_hurt");
     public static final SoundEvent BREEDY_DEATH = registerSoundEvent("breedy_death");
 
+    public static final SoundEvent RATH_AMBIENT = registerSoundEvent("rath_ambient");
+    public static final SoundEvent RATH_HURT = registerSoundEvent("rath_hurt");
+    public static final SoundEvent RATH_DEATH = registerSoundEvent("rath_death");
+
+    public static final SoundEvent BUMBO_AMBIENT = registerSoundEvent("bumbo_idle");
+    public static final SoundEvent BUMBO_HURT = registerSoundEvent("bumbo_hurt");
+    public static final SoundEvent BUMBO_DEATH = registerSoundEvent("bumbo_death");
+
     public static final SoundEvent AMETHYST_GOLEM_AMBIENT = registerSoundEvent("amethyst_golem_ambient");
     public static final SoundEvent AMETHYST_GOLEM_HURT = registerSoundEvent("amethyst_golem_hurt");
     public static final SoundEvent AMETHYST_GOLEM_DEATH = registerSoundEvent("amethyst_golem_death");

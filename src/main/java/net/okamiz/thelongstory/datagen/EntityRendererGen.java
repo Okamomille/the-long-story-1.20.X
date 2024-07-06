@@ -23,6 +23,9 @@ public class EntityRendererGen {
         EntityRendererRegistry.register(ModEntities.TOOKI, TookiRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.TOOKI, TookiModel::getTexturedModelData);
 
+        EntityRendererRegistry.register(ModEntities.RATH, RathRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.RATH, RathModel::getTexturedModelData);
+
         EntityRendererRegistry.register(ModEntities.BUMBO, BumboRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.BUMBO, BumboModel::getTexturedModelData);
 

@@ -184,6 +184,8 @@ public class ModItems {
             new SpawnEggItem(ModEntities.CRAWLER, 5339992,1078563, new FabricItemSettings()));
     public static final Item TOOKI_SPAWN_EGG = registerItem("tooki_spawn_egg",
             new SpawnEggItem(ModEntities.TOOKI, 12424932,7356576, new FabricItemSettings()));
+    public static final Item RATH_SPAWN_EGG = registerItem("rath_spawn_egg",
+            new SpawnEggItem(ModEntities.RATH, 14858495,12482032, new FabricItemSettings()));
     public static final Item COWSMIC_SPAWN_EGG = registerItem("cowsmic_spawn_egg",
             new SpawnEggItem(ModEntities.COWSMIC, 15500214,16777215, new FabricItemSettings()));
     public static final Item BREEDY_SPAWN_EGG = registerItem("breedy_spawn_egg",

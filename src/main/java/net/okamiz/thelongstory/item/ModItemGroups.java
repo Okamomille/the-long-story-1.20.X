@@ -425,7 +425,9 @@ public class ModItemGroups {
                         entries.add(ModItems.TREPASSEUR_SPAWN_EGG);
                         entries.add(ModItems.TICKELER_SPAWN_EGG);
                         entries.add(ModItems.CRAWLER_SPAWN_EGG);
+
                         entries.add(ModItems.TOOKI_SPAWN_EGG);
+                        entries.add(ModItems.RATH_SPAWN_EGG);
                         entries.add(ModItems.COWSMIC_SPAWN_EGG);
                         entries.add(ModItems.BREEDY_SPAWN_EGG);
                         entries.add(ModItems.BUMBO_SPAWN_EGG);

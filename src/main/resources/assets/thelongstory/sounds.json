@@ -41,6 +41,42 @@
       "thelongstory:tooki_death"
     ]
   },
+  "rath_ambient": {
+    "subtitle": "sounds.thelongstory.rath_ambient",
+    "sounds": [
+      "thelongstory:rath_ambient"
+    ]
+  },
+  "rath_hurt": {
+    "subtitle": "sounds.thelongstory.rath_hurt",
+    "sounds": [
+      "thelongstory:rath_hurt"
+    ]
+  },
+  "rath_death": {
+    "subtitle": "sounds.thelongstory.rath_death",
+    "sounds": [
+      "thelongstory:rath_death"
+    ]
+  },
+  "bumbo_ambient": {
+    "subtitle": "sounds.thelongstory.bumbo_ambient",
+    "sounds": [
+      "thelongstory:bumbo_ambient"
+    ]
+  },
+  "bumbo_hurt": {
+    "subtitle": "sounds.thelongstory.bumbo_hurt",
+    "sounds": [
+      "thelongstory:bumbo_hurt"
+    ]
+  },
+  "bumbo_death": {
+    "subtitle": "sounds.thelongstory.bumbo_death",
+    "sounds": [
+      "thelongstory:bumbo_death"
+    ]
+  },
   "breedy_ambient": {
     "subtitle": "sounds.thelongstory.breedy_ambient",
     "sounds": [

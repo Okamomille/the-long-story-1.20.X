@@ -194,6 +194,7 @@
   "item.thelongstory.tickeler_spawn_egg" : "Tickeler Spawn Egg",
   "item.thelongstory.crawler_spawn_egg" : "Crawler Spawn Egg",
   "item.thelongstory.tooki_spawn_egg" : "Tooki Spawn Egg",
+  "item.thelongstory.rath_spawn_egg" : "Rath Spawn Egg",
   "item.thelongstory.cowsmic_spawn_egg" : "Cowsmic Spawn Egg",
   "item.thelongstory.breedy_spawn_egg" : "Breedy Spawn Egg",
   "item.thelongstory.bumbo_spawn_egg" : "Bumbo Spawn Egg",
@@ -494,15 +495,16 @@
   "effect.thelongstory.crystallized": "Crystallized",
   "effect.thelongstory.sea_charm": "Ocean Agility",
 
-  "entity.thelongstory.trepasseur": "a Trepasseur",
-  "entity.thelongstory.tickeler": "a Tickeler",
-  "entity.thelongstory.crawler": "a Crawler",
-  "entity.thelongstory.tooki": "a Tooki",
-  "entity.thelongstory.cowsmic": "a Cowsmic",
-  "entity.thelongstory.breedy": "a Breedy",
-  "entity.thelongstory.bumbo": "a Bumbo",
+  "entity.thelongstory.trepasseur": "Trepasseur",
+  "entity.thelongstory.tickeler": "Tickeler",
+  "entity.thelongstory.crawler": "Crawler",
+  "entity.thelongstory.tooki": "Tooki",
+  "entity.thelongstory.rath": "Rath",
+  "entity.thelongstory.cowsmic": "Cowsmic",
+  "entity.thelongstory.breedy": "Breedy",
+  "entity.thelongstory.bumbo": "Bumbo",
   "entity.thelongstory.amethyst_golem": "the Amethyst Golem.",
-  "entity.thelongstory.amethyst_minion": "an Amethyst Minion.",
+  "entity.thelongstory.amethyst_minion": "Amethyst Minion.",
 
 
 
@@ -510,18 +512,30 @@
   "sounds.thelongstory.greffed_command_system_activate": "Greffed Command System Activation",
   "sounds.thelongstory.greffed_command_system_fail": "Greffed Command System Waiting",
   "sounds.thelongstory.greffed_command_system_give_effect": "Greffed Command System Gives Effect",
+
   "sounds.thelongstory.teleportation": "Player Teleportation",
-  "sounds.thelongstory.tooki_idle": "Tooki Ambient",
-  "sounds.thelongstory.tooki_hurt": "Tooki Hurt",
-  "sounds.thelongstory.tooki_death": "Tooki Death",
 
-  "sounds.thelongstory.breedy_ambient": "Breedy Singing",
-  "sounds.thelongstory.breedy_hurt": "Breedy Hurt",
-  "sounds.thelongstory.breedy_death": "Breedy Death",
 
-  "sounds.thelongstory.amethyst_golem_ambient": "Amethyst Golem Singing",
-  "sounds.thelongstory.amethyst_golem_hurt": "Amethyst Golem Hurt",
-  "sounds.thelongstory.amethyst_golem_death": "Amethyst Golem Death",
+
+  "sounds.thelongstory.tooki_idle": "Tooki ambient",
+  "sounds.thelongstory.tooki_hurt": "Tooki hurts",
+  "sounds.thelongstory.tooki_death": "Tooki death",
+
+  "sounds.thelongstory.breedy_ambient": "Breedy singing",
+  "sounds.thelongstory.breedy_hurt": "Breedy hurts",
+  "sounds.thelongstory.breedy_death": "Breedy death",
+
+  "sounds.thelongstory.rath_ambient": "Rath ambient",
+  "sounds.thelongstory.rath_hurt": "Rath hurts",
+  "sounds.thelongstory.rath_death": "Rath death",
+
+  "sounds.thelongstory.bumbo_ambient": "Bumbo ambient",
+  "sounds.thelongstory.bumbo_hurt": "Bumbo hurts",
+  "sounds.thelongstory.bumbo_death": "Bumbo death",
+
+  "sounds.thelongstory.amethyst_golem_ambient": "Amethyst Golem ambient",
+  "sounds.thelongstory.amethyst_golem_hurt": "Amethyst Golem hurts",
+  "sounds.thelongstory.amethyst_golem_death": "Amethyst Golem death",
 
 
 
