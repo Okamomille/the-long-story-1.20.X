@@ -27,7 +27,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
     public void generateAdvancement(Consumer<Advancement> consumer) {
         Advancement rootAdvancement = Advancement.Builder.create()
                 .display(new AdvancementDisplay(new ItemStack(ModItems.THESTONE_DUST),
-                        Text.literal("Shiny!"), Text.literal("Find and mine Thestone Ore."),
+                        Text.literal("The Long Story"), Text.literal("Find and mine Thestone Ore."),
                         new Identifier(TheLongStory.MOD_ID, "textures/block/carbon_tiles.png"), AdvancementFrame.TASK,
                         true, true, false))
                 .criterion("has_thestone_dust", InventoryChangedCriterion.Conditions.items(ModItems.THESTONE_DUST))
