@@ -41,7 +41,7 @@ public class ModLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
             }
 
-            if(SKELETON_ID.equals(id)){
+            /*if(SKELETON_ID.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.8f)) // 1f = 100% of the time
@@ -49,7 +49,7 @@ public class ModLootTableModifiers {
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build()); // Number of Items
 
                 tableBuilder.pool(poolBuilder.build());
-            }
+            }*/
 
             if(SPIDER_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()

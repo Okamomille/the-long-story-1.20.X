@@ -57,6 +57,14 @@ public class ModCustomTrades {
                             new ItemStack(Items.EMERALD, 1),
                             new ItemStack(ModBlocks.YELLOW_OSPET, 1),
                             18,3,0.05f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(ModBlocks.PINK_PHYGELUS, 1),
+                            18,3,0.05f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(ModBlocks.YELLOW_PHYGELUS, 1),
+                            18,3,0.05f));
                 });
 
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1,
