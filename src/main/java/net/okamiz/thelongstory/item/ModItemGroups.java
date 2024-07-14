@@ -447,6 +447,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SWEET_PEAR_SEEDS);
                         entries.add(ModItems.SWEET_PEAR);
                         entries.add(ModItems.TORN_CARROT);
+                        entries.add(ModItems.TORN_POTATO);
+                        entries.add(ModItems.BAKED_TORN_POTATO);
 
                         entries.add(ModItems.EMERALD_APPLE);
                         entries.add(ModItems.IRON_APPLE);

@@ -36,6 +36,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> ICED_CHISELED_STONE_BRICKS = List.of(ModBlocks.ICED_CHISELED_STONE_BRICKS);
     private static final List<ItemConvertible> ICED_STONE_BRICKS = List.of(ModBlocks.ICED_STONE_BRICKS);
 
+
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
     }
@@ -68,21 +69,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.7f,100,"zarosite_gemstone");
 
         offerSmelting(exporter, FLUORITE_SMELTABLES, RecipeCategory.MISC, ModItems.FLUORITE,
-                0.7f,200,"zarosite_gemstone");
+                0.7f,200,"fluorite");
         offerBlasting(exporter, FLUORITE_SMELTABLES, RecipeCategory.MISC, ModItems.FLUORITE,
-                0.7f,100,"zarosite_gemstone");
+                0.7f,100,"fluorite");
 
 
         offerSmelting(exporter, ICED_STONE, RecipeCategory.MISC, Blocks.STONE,
-                0.7f,200,"zarosite_gemstone");
+                0.7f,200,"stone");
         offerSmelting(exporter, ICED_STONE_BRICKS, RecipeCategory.MISC, Blocks.STONE_BRICKS,
-                0.7f,200,"zarosite_gemstone");
+                0.7f,200,"stone_bricks");
         offerSmelting(exporter, ICED_CHISELED_STONE_BRICKS, RecipeCategory.MISC, Blocks.CHISELED_STONE_BRICKS,
-                0.7f,200,"zarosite_gemstone");
+                0.7f,200,"chiseled_stone_bricks");
         offerSmelting(exporter, ICED_CRACKED_STONE_BRICKS, RecipeCategory.MISC, Blocks.CRACKED_STONE_BRICKS,
-                0.7f,200,"zarosite_gemstone");
+                0.7f,200,"cracked_stone_bricks");
         offerSmelting(exporter, ICED_COBBLESTONE, RecipeCategory.MISC, Blocks.COBBLESTONE,
-                0.7f,200,"zarosite_gemstone");
+                0.7f,200,"cobblestone");
+
+
 
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.CARBON_INGOT, RecipeCategory.MISC,

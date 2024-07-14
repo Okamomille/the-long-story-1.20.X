@@ -289,10 +289,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PURE_AMETHYST_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.FLAMING_SHARD, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.FADED_CACTUS_STICK, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CARBON_STICK, Models.GENERATED);
-        itemModelGenerator.register(ModItems.PURE_AMETHYST_STICK, Models.GENERATED);
-        itemModelGenerator.register(ModItems.FLAMING_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FADED_CACTUS_STICK, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CARBON_STICK, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PURE_AMETHYST_STICK, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FLAMING_STICK, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.AMETHYST_KEY, Models.GENERATED);
 
@@ -405,11 +405,13 @@ public class ModModelProvider extends FabricModelProvider {
 
 
 
-        itemModelGenerator.register(ModItems.VITALY_SEEDS, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.VITALY_FRUIT, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.TORN_CARROT, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.SWEET_PEAR_SEEDS, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.SWEET_PEAR, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VITALY_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VITALY_FRUIT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TORN_CARROT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TORN_POTATO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAKED_TORN_POTATO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SWEET_PEAR_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SWEET_PEAR, Models.GENERATED);
 
         
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_HELMET));

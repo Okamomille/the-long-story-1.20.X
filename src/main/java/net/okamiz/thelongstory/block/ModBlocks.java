@@ -3,7 +3,6 @@ package net.okamiz.thelongstory.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -13,10 +12,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.okamiz.thelongstory.TheLongStory;
-import net.okamiz.thelongstory.block.crops.FadedCactusBlock;
-import net.okamiz.thelongstory.block.crops.SweatPearCropBlock;
-import net.okamiz.thelongstory.block.crops.TornCarrotCropBlock;
-import net.okamiz.thelongstory.block.crops.VitalyCropBlock;
+import net.okamiz.thelongstory.block.crops.*;
 import net.okamiz.thelongstory.block.custom.*;
 import net.okamiz.thelongstory.block.custom.greffed_command_blocks.*;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricSaplingGenerator;
@@ -567,8 +563,11 @@ public class ModBlocks {
             new VitalyCropBlock(FabricBlockSettings.copyOf(Blocks.BEETROOTS)));
     public static final Block TORN_CARROT_CROP = registerBlockWithoutBlockItem("torn_carrot_crop",
             new TornCarrotCropBlock(FabricBlockSettings.copyOf(Blocks.CARROTS)));
+
+    public static final Block TORN_POTATO_CROP = registerBlockWithoutBlockItem("torn_potato_crop",
+            new TornPotatoCropBlock(FabricBlockSettings.copyOf(Blocks.POTATOES)));
     public static final Block SWEET_PEAR_CROP = registerBlockWithoutBlockItem("sweet_pear_crop",
-            new SweatPearCropBlock(FabricBlockSettings.copyOf(Blocks.CARROTS)));
+            new SweetPearCropBlock(FabricBlockSettings.copyOf(Blocks.CARROTS)));
 
 
 

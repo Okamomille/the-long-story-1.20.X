@@ -4,7 +4,7 @@
   "cookingtime": 100,
   "experience": 0.35,
   "ingredient": {
-    "item": "thelongstory:tooki_meat"
+    "item": "thelongstory:torn_potato"
   },
-  "result": "thelongstory:cooked_tooki_meat"
+  "result": "thelongstory:baked_torn_potato"
 }

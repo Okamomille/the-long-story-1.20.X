@@ -8,12 +8,12 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.okamiz.thelongstory.item.ModItems;
 
-public class SweatPearCropBlock extends CropBlock {
+public class SweetPearCropBlock extends CropBlock {
     public static final int MAX_AGE = 6;
     public static final IntProperty AGE = IntProperty.of("age", 0, 6);
 
 
-    public SweatPearCropBlock(Settings settings) {
+    public SweetPearCropBlock(Settings settings) {
         super(settings);
     }
 

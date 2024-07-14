@@ -144,6 +144,9 @@ public class ModItems {
     public static final Item TORN_CARROT = registerItem("torn_carrot",
             new AliasedBlockItem(ModBlocks.TORN_CARROT_CROP, new FabricItemSettings().food(ModFoodComponents.TORN_CARROT)));
 
+    public static final Item TORN_POTATO = registerItem("torn_potato",
+            new AliasedBlockItem(ModBlocks.TORN_POTATO_CROP, new FabricItemSettings().food(ModFoodComponents.TORN_POTATO)));
+
     public static final Item SWEET_PEAR_SEEDS = registerItem("sweet_pear_seeds",
             new AliasedBlockItem(ModBlocks.SWEET_PEAR_CROP, new FabricItemSettings()));
 
@@ -157,6 +160,7 @@ public class ModItems {
     public static final Item VITALY_FRUIT = registerItem("vitaly_fruit", new Item(new FabricItemSettings().food(ModFoodComponents.VITALY_FRUIT)));
     public static final Item SWEET_PEAR = registerItem("sweet_pear", new Item(new FabricItemSettings().food(ModFoodComponents.SWEET_PEAR)));
 
+    public static final Item BAKED_TORN_POTATO = registerItem("baked_torn_potato", new Item(new FabricItemSettings().food(ModFoodComponents.BAKED_TORN_POTATO)));
     public static final Item EMERALD_APPLE = registerItem("emerald_apple", new Item(new FabricItemSettings().food(ModFoodComponents.EMERALD_APPLE)));
     public static final Item IRON_APPLE = registerItem("iron_apple", new Item(new FabricItemSettings().food(ModFoodComponents.IRON_APPLE)));
     public static final Item DIAMOND_APPLE = registerItem("diamond_apple", new Item(new FabricItemSettings().food(ModFoodComponents.DIAMOND_APPLE)));

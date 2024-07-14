@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-06T18:30:57.1521032	The Long Story/Advancements
+// 1.20.1	2024-07-14T11:26:29.371927	The Long Story/Advancements
 e0144949f506884c479f30bdf10cb28c18b56619 data\thelongstory\advancements\obtained_leaping_container.json
 dc6aefbaf0916d390d63094fbc74c2b4e3de67ef data\thelongstory\advancements\obtained_thestone_ingot.json
 bcd6ccbd76da527290a84012501239e33ecaa044 data\thelongstory\advancements\obtained_full_thestone_armor.json
@@ -17,5 +17,5 @@ c5533b1d5cbc802c324c6f93fe965235d7711a8c data\thelongstory\advancements\used_tel
 3d21c89c0f8bd1cc0688a77c9241e35f2d144708 data\thelongstory\advancements\obtained_haste_container.json
 56d5b6eee4b941f2851c49067992569c253a8acb data\thelongstory\advancements\obtained_resistance_container.json
 7f800ad14c7e6207fb99c37de43b7ab5036a044b data\thelongstory\advancements\obtained_dolphin_grace_container.json
-2851b63fd094b7f5506821e3ec444c518ea23651 data\thelongstory\advancements\obtained_thestone_hoe.json
 065da72867297ceaaf4ce84b6c2c9eb6d2c2a99a data\thelongstory\advancements\obtained_thestone_axe.json
+2851b63fd094b7f5506821e3ec444c518ea23651 data\thelongstory\advancements\obtained_thestone_hoe.json

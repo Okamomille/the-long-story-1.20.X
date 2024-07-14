@@ -3,7 +3,7 @@
   "category": "blocks",
   "cookingtime": 200,
   "experience": 0.7,
-  "group": "zarosite_gemstone",
+  "group": "stone_bricks",
   "ingredient": {
     "item": "thelongstory:iced_stone_bricks"
   },
