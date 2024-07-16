@@ -22,6 +22,8 @@ import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.ModBlocks;
 import net.okamiz.thelongstory.util.ModTags;
+import net.okamiz.thelongstory.world.tree.custom.Binary.BinaryFoliagePlacer;
+import net.okamiz.thelongstory.world.tree.custom.Binary.BinaryTrunkPlacer;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricFoliagePlacer;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricTrunkPlacer;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastFoliagePlacer;
@@ -184,10 +186,10 @@ public class ModConfiguredFeatures {
 
         register(context, BINARY_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.BINARY_LOG),
-                new StraightTrunkPlacer(5, 2, 0),
+                new BinaryTrunkPlacer(6, 7, 5),
                 BlockStateProvider.of(ModBlocks.BINARY_LEAVES),
-                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-                new TwoLayersFeatureSize(1, 0, 1)).build());
+                new BinaryFoliagePlacer(15, ConstantIntProvider.create(-9), ConstantIntProvider.create(4)),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
 
     }
 
