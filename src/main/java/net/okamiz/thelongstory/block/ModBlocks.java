@@ -15,6 +15,11 @@ import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.crops.*;
 import net.okamiz.thelongstory.block.custom.*;
 import net.okamiz.thelongstory.block.custom.greffed_command_blocks.*;
+import net.okamiz.thelongstory.block.custom.leaves_blocks.BinaryLeavesBlock;
+import net.okamiz.thelongstory.block.custom.leaves_blocks.EgroricLeavesBlock;
+import net.okamiz.thelongstory.block.custom.leaves_blocks.KiwiLeavesBlock;
+import net.okamiz.thelongstory.block.custom.leaves_blocks.OastLeavesBlock;
+import net.okamiz.thelongstory.world.tree.custom.Binary.BinarySaplingGenerator;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricSaplingGenerator;
 import net.okamiz.thelongstory.world.tree.custom.Kiwi.KiwiSaplingGenerator;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastSaplingGenerator;
@@ -463,7 +468,48 @@ public class ModBlocks {
 
     // -------------------------------------
 
+    // >>> BINARY
 
+
+    public static final Block BINARY_SAPLING = registerBlock("binary_sapling",
+            new SaplingBlock(new BinarySaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    public static final Block BINARY_LEAVES = registerBlock("binary_leaves",
+            new BinaryLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque().luminance(6)));
+
+    public static final Block BINARY_LOG = registerBlock("binary_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(3f)));
+    public static final Block BINARY_WOOD = registerBlock("binary_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(3f)));
+    public static final Block STRIPPED_BINARY_LOG = registerBlock("stripped_binary_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(3f)));
+    public static final Block STRIPPED_BINARY_WOOD = registerBlock("stripped_binary_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(3f)));
+
+    public static final Block BINARY_PLANKS = registerBlock("binary_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
+    public static final Block BINARY_STAIRS = registerBlock("binary_stairs",
+            new StairsBlock(ModBlocks.BINARY_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block BINARY_SLAB = registerBlock("binary_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
+    public static final Block BINARY_BUTTON = registerBlock("binary_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK, 20, true));
+    public static final Block BINARY_PRESSURE_PLATE = registerBlock("binary_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PLANKS),BlockSetType.OAK));
+
+    public static final Block BINARY_FENCE = registerBlock("binary_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block BINARY_FENCE_GATE = registerBlock("binary_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), WoodType.OAK));
+
+    public static final Block BINARY_DOOR = registerBlock("binary_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR),BlockSetType.OAK));
+    public static final Block BINARY_TRAPDOOR = registerBlock("binary_trapdoor",
+            new ModTrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR),BlockSetType.OAK));
+
+    // -------------------------------------
 
 
 

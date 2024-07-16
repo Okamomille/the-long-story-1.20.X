@@ -6,6 +6,7 @@ import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.okamiz.thelongstory.datagen.EntityRendererGen;
 import net.okamiz.thelongstory.datagen.RenderCutout;
 import net.okamiz.thelongstory.particles.ModParticles;
+import net.okamiz.thelongstory.particles.TSLParticles.BinaryLeavesParticle;
 import net.okamiz.thelongstory.particles.TSLParticles.EgroricLeavesParticle;
 import net.okamiz.thelongstory.particles.TSLParticles.KiwiLeavesParticle;
 import net.okamiz.thelongstory.screen.AmethystProcessorScreen;
@@ -26,7 +27,8 @@ public class TheLongStoryClient implements ClientModInitializer {
         ModModelPredicateProvider.registerModModels();
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.EGRORIC_LEAVES_PARTICLE, EgroricLeavesParticle.Factory::new);
-        ParticleFactoryRegistry.getInstance().register(ModParticles.EGRORIC_LEAVES_PARTICLE, KiwiLeavesParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(ModParticles.KIWI_LEAVES_PARTICLE, KiwiLeavesParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(ModParticles.BINARY_LEAVES_PARTICLE, BinaryLeavesParticle.Factory::new);
 
 
 

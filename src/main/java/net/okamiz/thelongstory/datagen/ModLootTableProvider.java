@@ -190,7 +190,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SEPHIN_DOOR, doorDrops(ModBlocks.SEPHIN_DOOR));
         addDrop(ModBlocks.SEPHIN_TRAPDOOR);
 
-        //SEPHIN LOOTS ------------------------------------
+        //KIWI LOOTS ------------------------------------
         addDrop(ModBlocks.KIWI_LEAVES, leavesDrops(ModBlocks.KIWI_LEAVES, ModBlocks.KIWI_SAPLING, 0.025f));
         addDrop(ModBlocks.KIWI_SAPLING);
         addDrop(ModBlocks.KIWI_LOG);
@@ -207,7 +207,22 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.KIWI_DOOR, doorDrops(ModBlocks.KIWI_DOOR));
         addDrop(ModBlocks.KIWI_TRAPDOOR);
 
-
+        //BINARY LOOTS ------------------------------------
+        addDrop(ModBlocks.BINARY_LEAVES, leavesDrops(ModBlocks.BINARY_LEAVES, ModBlocks.BINARY_SAPLING, 0.025f));
+        addDrop(ModBlocks.BINARY_SAPLING);
+        addDrop(ModBlocks.BINARY_LOG);
+        addDrop(ModBlocks.STRIPPED_BINARY_LOG);
+        addDrop(ModBlocks.BINARY_WOOD);
+        addDrop(ModBlocks.STRIPPED_BINARY_WOOD);
+        addDrop(ModBlocks.BINARY_PLANKS);
+        addDrop(ModBlocks.BINARY_STAIRS);
+        addDrop(ModBlocks.BINARY_PRESSURE_PLATE);
+        addDrop(ModBlocks.BINARY_BUTTON);
+        addDrop(ModBlocks.BINARY_FENCE_GATE);
+        addDrop(ModBlocks.BINARY_FENCE);
+        addDrop(ModBlocks.BINARY_SLAB, slabDrops(ModBlocks.BINARY_SLAB));
+        addDrop(ModBlocks.BINARY_DOOR, doorDrops(ModBlocks.BINARY_DOOR));
+        addDrop(ModBlocks.BINARY_TRAPDOOR);
 
 
 

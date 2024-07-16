@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "thelongstory:block/binary_pressure_plate"
+    },
+    "powered=true": {
+      "model": "thelongstory:block/binary_pressure_plate_down"
+    }
+  }
+}

@@ -35,6 +35,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.OAST_PLANKS.asItem())
                 .add(ModBlocks.SEPHIN_PLANKS.asItem())
                 .add(ModBlocks.KIWI_PLANKS.asItem())
+                .add(ModBlocks.BINARY_PLANKS.asItem())
                 .add(ModBlocks.FADED_CACTUS_PLANKS.asItem());
 
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
@@ -56,7 +57,12 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.KIWI_LOG.asItem())
                 .add(ModBlocks.KIWI_WOOD.asItem())
                 .add(ModBlocks.STRIPPED_KIWI_LOG.asItem())
-                .add(ModBlocks.STRIPPED_KIWI_WOOD.asItem());
+                .add(ModBlocks.STRIPPED_KIWI_WOOD.asItem())
+
+                .add(ModBlocks.BINARY_LOG.asItem())
+                .add(ModBlocks.BINARY_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_BINARY_LOG.asItem())
+                .add(ModBlocks.STRIPPED_BINARY_WOOD.asItem());
 
 
         getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)

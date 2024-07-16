@@ -413,6 +413,22 @@
   "block.thelongstory.kiwi_button" : "Kiwi Button",
   "block.thelongstory.kiwi_pressure_plate" : "Kiwi Pressure Plate",
 
+  "block.thelongstory.binary_sapling" : "Binary Sapling",
+  "block.thelongstory.binary_log" : "Binary Log",
+  "block.thelongstory.binary_wood" : "Binary Wood",
+  "block.thelongstory.stripped_binary_log" : "Stripped Binary Log",
+  "block.thelongstory.stripped_binary_wood" : "Stripped Binary Wood",
+  "block.thelongstory.binary_leaves" : "Binary Leaves",
+  "block.thelongstory.binary_planks" : "Binary Planks",
+  "block.thelongstory.binary_stairs" : "Binary Stairs",
+  "block.thelongstory.binary_slab" : "Binary Slab",
+  "block.thelongstory.binary_fence" : "Binary Fence",
+  "block.thelongstory.binary_door" : "Binary Door",
+  "block.thelongstory.binary_trapdoor" : "Binary Trapdoor",
+  "block.thelongstory.binary_fence_gate" : "Binary Fence Gate",
+  "block.thelongstory.binary_button" : "Binary Button",
+  "block.thelongstory.binary_pressure_plate" : "Binary Pressure Plate",
+
   "block.thelongstory.impure_glitched_block" : "Impure Glitched Block",
   "block.thelongstory.pure_glitched_block" : "Pure Glitched Block",
 

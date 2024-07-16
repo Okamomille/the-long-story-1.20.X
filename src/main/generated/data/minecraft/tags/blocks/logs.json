@@ -16,6 +16,10 @@
     "thelongstory:kiwi_log",
     "thelongstory:kiwi_wood",
     "thelongstory:stripped_kiwi_log",
-    "thelongstory:stripped_kiwi_wood"
+    "thelongstory:stripped_kiwi_wood",
+    "thelongstory:binary_log",
+    "thelongstory:binary_wood",
+    "thelongstory:stripped_binary_log",
+    "thelongstory:stripped_binary_wood"
   ]
 }

@@ -45,6 +45,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?,?>> OAST_KEY = registryKey("oast");
     public static final RegistryKey<ConfiguredFeature<?,?>> SEPHIN_KEY = registryKey("sephin");
     public static final RegistryKey<ConfiguredFeature<?,?>> KIWI_KEY = registryKey("kiwi");
+    public static final RegistryKey<ConfiguredFeature<?,?>> BINARY_KEY = registryKey("binary");
 
 
 
@@ -178,6 +179,13 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.KIWI_LOG),
                 new StraightTrunkPlacer(5, 2, 0),
                 BlockStateProvider.of(ModBlocks.KIWI_LEAVES),
+                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
+                new TwoLayersFeatureSize(1, 0, 1)).build());
+
+        register(context, BINARY_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.BINARY_LOG),
+                new StraightTrunkPlacer(5, 2, 0),
+                BlockStateProvider.of(ModBlocks.BINARY_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
                 new TwoLayersFeatureSize(1, 0, 1)).build());
 

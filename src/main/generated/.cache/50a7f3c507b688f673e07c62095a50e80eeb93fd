@@ -1,7 +1,7 @@
-// 1.20.1	2024-07-14T11:26:29.3739351	The Long Story/Tags for minecraft:item
+// 1.20.1	2024-07-16T11:28:37.1957951	The Long Story/Tags for minecraft:item
 f9d0f48ee47fb7bd25d27869fc35f77b11ba4800 data\minecraft\tags\items\stone_crafting_materials.json
 f9d0f48ee47fb7bd25d27869fc35f77b11ba4800 data\minecraft\tags\items\stone_tool_materials.json
 3468a39c0ed6ac52ae7690937380f2b9562b279b data\minecraft\tags\items\sand.json
-00ac0ba10827dd08affa171adb78347a4c1656ad data\minecraft\tags\items\planks.json
+12b899bf77d98d897aafae454a854cfe633f6aea data\minecraft\tags\items\planks.json
 01582e5e7e26ba0bc193d088749353111fdaa54e data\minecraft\tags\items\trimmable_armor.json
-46f3420cffb45e0c5306fdd986704b4b26744651 data\minecraft\tags\items\logs_that_burn.json
+f50def83409286af29f2e577c120257361711eab data\minecraft\tags\items\logs_that_burn.json

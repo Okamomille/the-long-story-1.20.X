@@ -1,4 +1,4 @@
-package net.okamiz.thelongstory.block.custom;
+package net.okamiz.thelongstory.block.custom.leaves_blocks;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.LeavesBlock;
@@ -17,12 +17,14 @@ public class OastLeavesBlock extends LeavesBlock {
     @Override
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
         super.randomDisplayTick(state, world, pos, random);
-        if (random.nextInt(10) == 0) {
-            BlockPos blockPos = pos.down();
-            BlockState blockState = world.getBlockState(blockPos);
-            if (!isFaceFullSquare(blockState.getCollisionShape(world, blockPos), Direction.UP)) {
-                ParticleUtil.spawnParticle(world, pos, random, ParticleTypes.CHERRY_LEAVES);
-            }
+        if (random.nextInt(10) != 0) {
+            return;
         }
+        BlockPos blockPos = pos.down();
+        BlockState blockState = world.getBlockState(blockPos);
+        if (OastLeavesBlock.isFaceFullSquare(blockState.getCollisionShape(world, blockPos), Direction.UP)) {
+            return;
+        }
+        ParticleUtil.spawnParticle(world, pos, random, ParticleTypes.CHERRY_LEAVES);
     }
 }

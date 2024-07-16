@@ -20,5 +20,8 @@ public class ModStrippableBlocks {
 
         StrippableBlockRegistry.register(ModBlocks.KIWI_LOG, ModBlocks.STRIPPED_KIWI_LOG);
         StrippableBlockRegistry.register(ModBlocks.KIWI_WOOD, ModBlocks.STRIPPED_KIWI_WOOD);
+
+        StrippableBlockRegistry.register(ModBlocks.BINARY_LOG, ModBlocks.STRIPPED_BINARY_LOG);
+        StrippableBlockRegistry.register(ModBlocks.BINARY_WOOD, ModBlocks.STRIPPED_BINARY_WOOD);
     }
 }

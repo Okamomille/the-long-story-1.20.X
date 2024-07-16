@@ -238,6 +238,23 @@ public class ModItemGroups {
                         entries.add(ModBlocks.KIWI_FENCE);
                         entries.add(ModBlocks.KIWI_FENCE_GATE);
 
+                        //BINARY
+                        entries.add(ModBlocks.BINARY_SAPLING);
+                        entries.add(ModBlocks.BINARY_LEAVES);
+                        entries.add(ModBlocks.BINARY_LOG);
+                        entries.add(ModBlocks.BINARY_WOOD);
+                        entries.add(ModBlocks.STRIPPED_BINARY_LOG);
+                        entries.add(ModBlocks.STRIPPED_BINARY_WOOD);
+                        entries.add(ModBlocks.BINARY_PLANKS);
+                        entries.add(ModBlocks.BINARY_STAIRS);
+                        entries.add(ModBlocks.BINARY_SLAB);
+                        entries.add(ModBlocks.BINARY_BUTTON);
+                        entries.add(ModBlocks.BINARY_PRESSURE_PLATE);
+                        entries.add(ModBlocks.BINARY_DOOR);
+                        entries.add(ModBlocks.BINARY_TRAPDOOR);
+                        entries.add(ModBlocks.BINARY_FENCE);
+                        entries.add(ModBlocks.BINARY_FENCE_GATE);
+
 
                         entries.add(ModBlocks.FADED_CACTUS);
 

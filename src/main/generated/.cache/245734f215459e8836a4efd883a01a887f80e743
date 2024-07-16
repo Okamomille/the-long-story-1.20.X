@@ -1,22 +1,22 @@
-// 1.20.1	2024-07-14T11:26:29.3729337	The Long Story/Tags for minecraft:block
+// 1.20.1	2024-07-16T11:28:37.1957951	The Long Story/Tags for minecraft:block
 c91125b1959919d2a9b818fb7414875e52ad5258 data\minecraft\tags\blocks\walls.json
-e25aedbc91b4b90ffb1d06dacac9e378ced2a4e6 data\minecraft\tags\blocks\mineable\axe.json
-6829435014c0662fc1471b468169bc6b5539f1c8 data\minecraft\tags\blocks\wooden_stairs.json
+f287acc78cc2a2b25277a99913449ebedc4a2f93 data\minecraft\tags\blocks\mineable\axe.json
 13b6e09f37a2828b23e3d485b8e823c4e0914f22 data\minecraft\tags\blocks\mineable\pickaxe.json
+0d535909bb048e38f0a2108ee893615d5c4ef23d data\minecraft\tags\blocks\wooden_stairs.json
 f8b995c09cb2c523881314ffc156f609011a34f7 data\thelongstory\tags\blocks\red_sandstone_replacables.json
 00354dcb59a1105500f6181ff850f588bb45f7d3 data\minecraft\tags\blocks\needs_diamond_tool.json
 1b28dcb283ff93b86e6a8ea0bc888484e9d960f0 data\minecraft\tags\blocks\needs_iron_tool.json
-46f3420cffb45e0c5306fdd986704b4b26744651 data\minecraft\tags\blocks\logs.json
+f50def83409286af29f2e577c120257361711eab data\minecraft\tags\blocks\logs.json
 5961608a3fe97474eacead44f6b04d7357a4239f data\thelongstory\tags\blocks\deep_ice_replacable.json
-c8ec28f1b17f4e98c30660e8c46d481affff3b48 data\minecraft\tags\blocks\wooden_trapdoors.json
-6d7c032923638d614f89fad664a775a75529bee1 data\minecraft\tags\blocks\wooden_doors.json
+90af8e50853a9f3bed60759cfe7be88c16414f71 data\minecraft\tags\blocks\wooden_trapdoors.json
+cd7541b2f2690b68d45422d5111b107412f43563 data\minecraft\tags\blocks\wooden_doors.json
 5277e090dc56ec2118be47567d42c96abdeaec56 data\minecraft\tags\blocks\stairs.json
 1218c3c20345e019c53ccf697948bbd881b0f4e2 data\minecraft\tags\blocks\slabs.json
-3e3f82abbc95dbf6e6d87608c09ff170d6de21b3 data\minecraft\tags\blocks\wooden_fences.json
+50539ceede519a24069598d7e98cc5d28b844079 data\minecraft\tags\blocks\wooden_fences.json
 f9d0f48ee47fb7bd25d27869fc35f77b11ba4800 data\thelongstory\tags\blocks\torch_stone_replacables.json
 81d93e00fd5c6728c98abd8960d98f7a11e8938c data\minecraft\tags\blocks\mineable\shovel.json
-81de045cc278e4aa70eff05980eb7c9cf45c2716 data\minecraft\tags\blocks\wooden_slabs.json
+d9d17c52665cf2a58c7b483aacca83753c1d7166 data\minecraft\tags\blocks\wooden_slabs.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
 c7ab5ad6a1323868cd746387f719cfa0c28b8a2b data\minecraft\tags\blocks\needs_stone_tool.json
-179f26ff9437a7d1c82c200719189fa5838030cd data\minecraft\tags\blocks\fence_gates.json
+c1df18fce7a3566e134188c3884fa2867fee733c data\minecraft\tags\blocks\fence_gates.json
 3468a39c0ed6ac52ae7690937380f2b9562b279b data\minecraft\tags\blocks\sand.json

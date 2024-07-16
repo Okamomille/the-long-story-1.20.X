@@ -171,6 +171,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STRIPPED_KIWI_LOG)
                 .add(ModBlocks.STRIPPED_KIWI_WOOD)
                 .add(ModBlocks.KIWI_PLANKS)
+
+                .add(ModBlocks.BINARY_LOG)
+                .add(ModBlocks.BINARY_WOOD)
+                .add(ModBlocks.STRIPPED_BINARY_LOG)
+                .add(ModBlocks.STRIPPED_BINARY_WOOD)
+                .add(ModBlocks.BINARY_PLANKS)
         ;
 
 
@@ -214,6 +220,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.OAST_FENCE)
                 .add(ModBlocks.KIWI_FENCE)
+                .add(ModBlocks.BINARY_FENCE)
                 .add(ModBlocks.SEPHIN_FENCE)
                 .add(ModBlocks.EGRORIC_FENCE)
         ;
@@ -221,6 +228,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.OAST_FENCE_GATE)
                 .add(ModBlocks.KIWI_FENCE_GATE)
+                .add(ModBlocks.BINARY_FENCE_GATE)
                 .add(ModBlocks.SEPHIN_FENCE_GATE)
                 .add(ModBlocks.EGRORIC_FENCE_GATE)
         ;
@@ -231,6 +239,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OAST_DOOR)
                 .add(ModBlocks.SEPHIN_DOOR)
                 .add(ModBlocks.KIWI_DOOR)
+                .add(ModBlocks.BINARY_DOOR)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
@@ -239,6 +248,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OAST_TRAPDOOR)
                 .add(ModBlocks.SEPHIN_TRAPDOOR)
                 .add(ModBlocks.KIWI_TRAPDOOR)
+                .add(ModBlocks.BINARY_TRAPDOOR)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
@@ -246,6 +256,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OAST_SLAB)
                 .add(ModBlocks.SEPHIN_SLAB)
                 .add(ModBlocks.KIWI_SLAB)
+                .add(ModBlocks.BINARY_SLAB)
                 .add(ModBlocks.FADED_CACTUS_SLAB)
         ;
 
@@ -297,6 +308,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OAST_STAIRS)
                 .add(ModBlocks.SEPHIN_STAIRS)
                 .add(ModBlocks.KIWI_STAIRS)
+                .add(ModBlocks.BINARY_STAIRS)
         ;
 
 
@@ -320,6 +332,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.KIWI_WOOD)
                 .add(ModBlocks.STRIPPED_KIWI_LOG)
                 .add(ModBlocks.STRIPPED_KIWI_WOOD)
+
+                .add(ModBlocks.BINARY_LOG)
+                .add(ModBlocks.BINARY_WOOD)
+                .add(ModBlocks.STRIPPED_BINARY_LOG)
+                .add(ModBlocks.STRIPPED_BINARY_WOOD)
         ;
 
         getOrCreateTagBuilder(BlockTags.SAND)

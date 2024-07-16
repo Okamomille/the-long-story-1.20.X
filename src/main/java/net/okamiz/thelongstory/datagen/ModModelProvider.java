@@ -233,6 +233,23 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.KIWI_DOOR);
         blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.KIWI_TRAPDOOR);
 
+        //BINARY MODELS ------------------------------------
+        blockStateModelGenerator.registerLog(ModBlocks.BINARY_LOG).log(ModBlocks.BINARY_LOG).wood(ModBlocks.BINARY_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BINARY_LOG).log(ModBlocks.STRIPPED_BINARY_LOG).wood(ModBlocks.STRIPPED_BINARY_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BINARY_LEAVES);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.BINARY_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        BlockStateModelGenerator.BlockTexturePool binaryPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BINARY_PLANKS);
+        binaryPool.stairs(ModBlocks.BINARY_STAIRS);
+        binaryPool.slab(ModBlocks.BINARY_SLAB);
+        binaryPool.button(ModBlocks.BINARY_BUTTON);
+        binaryPool.pressurePlate(ModBlocks.BINARY_PRESSURE_PLATE);
+        binaryPool.fence(ModBlocks.BINARY_FENCE);
+        binaryPool.fenceGate(ModBlocks.BINARY_FENCE_GATE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.BINARY_DOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.BINARY_TRAPDOOR);
+
 //--------------------------------------------------------------------------------------
 
         blockStateModelGenerator.registerTintableCross(ModBlocks.TORN_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED);

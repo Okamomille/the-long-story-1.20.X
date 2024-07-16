@@ -2054,6 +2054,70 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
+        //BINARY RECIPES -------------------------
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.BINARY_BUTTON, 1).input(ModBlocks.BINARY_PLANKS)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.BINARY_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.BINARY_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.BINARY_BUTTON),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.BINARY_BUTTON))
+                .offerTo(exporter, new Identifier("binary_button"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BINARY_PLANKS, 4).input(ModBlocks.BINARY_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.BINARY_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.BINARY_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.BINARY_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.BINARY_PLANKS))
+                .offerTo(exporter, new Identifier("binary_planks_from_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BINARY_PLANKS, 4).input(ModBlocks.BINARY_WOOD)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.BINARY_WOOD),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.BINARY_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.BINARY_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.BINARY_PLANKS))
+                .offerTo(exporter, new Identifier("binary_planks_from_wood"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BINARY_PLANKS, 4).input(ModBlocks.STRIPPED_BINARY_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_BINARY_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_BINARY_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.BINARY_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.BINARY_PLANKS))
+                .offerTo(exporter, new Identifier("binary_planks_from_stripped_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BINARY_PLANKS, 4).input(ModBlocks.STRIPPED_BINARY_WOOD)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_BINARY_WOOD),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_BINARY_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.BINARY_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.BINARY_PLANKS))
+                .offerTo(exporter, new Identifier("binary_planks_from_stripped_wood"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE,ModBlocks.BINARY_PRESSURE_PLATE, 1)
+                .pattern("XX")
+                .input('X', ModBlocks.BINARY_PLANKS)
+                .criterion(hasItem(ModBlocks.BINARY_PLANKS),conditionsFromItem(ModBlocks.BINARY_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BINARY_PRESSURE_PLATE)));
+
+
+        createStairsRecipe(ModBlocks.BINARY_STAIRS, Ingredient.ofItems(ModBlocks.BINARY_PLANKS))
+                .criterion(hasItem(ModBlocks.BINARY_PLANKS),conditionsFromItem(ModBlocks.BINARY_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BINARY_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.BINARY_SLAB, Ingredient.ofItems(ModBlocks.BINARY_PLANKS))
+                .criterion(hasItem(ModBlocks.BINARY_PLANKS),conditionsFromItem(ModBlocks.BINARY_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BINARY_SLAB)));
+
+        createFenceGateRecipe(ModBlocks.BINARY_FENCE_GATE, Ingredient.ofItems(ModBlocks.BINARY_PLANKS))
+                .criterion(hasItem(ModBlocks.BINARY_PLANKS),conditionsFromItem(ModBlocks.BINARY_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BINARY_FENCE_GATE)));
+
+        createFenceRecipe(ModBlocks.BINARY_FENCE, Ingredient.ofItems(ModBlocks.BINARY_PLANKS))
+                .criterion(hasItem(ModBlocks.BINARY_PLANKS),conditionsFromItem(ModBlocks.BINARY_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BINARY_FENCE)));
+
+        createDoorRecipe(ModBlocks.BINARY_DOOR, Ingredient.ofItems(ModBlocks.BINARY_PLANKS))
+                .criterion(hasItem(ModBlocks.BINARY_PLANKS),conditionsFromItem(ModBlocks.BINARY_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BINARY_DOOR)));
+
+        createTrapdoorRecipe(ModBlocks.BINARY_TRAPDOOR, Ingredient.ofItems(ModBlocks.BINARY_PLANKS))
+                .criterion(hasItem(ModBlocks.BINARY_PLANKS),conditionsFromItem(ModBlocks.BINARY_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BINARY_TRAPDOOR)));
+
+
 
 
 

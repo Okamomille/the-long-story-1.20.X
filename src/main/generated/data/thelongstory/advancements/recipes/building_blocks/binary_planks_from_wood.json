@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_binary_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:binary_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_binary_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:binary_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:binary_planks_from_wood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_binary_wood",
+      "has_binary_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:binary_planks_from_wood"
+    ]
+  },
+  "sends_telemetry_event": false
+}
