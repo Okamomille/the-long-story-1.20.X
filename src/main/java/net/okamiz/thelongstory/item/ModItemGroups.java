@@ -238,6 +238,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.KIWI_FENCE);
                         entries.add(ModBlocks.KIWI_FENCE_GATE);
 
+                        /*
                         //BINARY
                         entries.add(ModBlocks.BINARY_SAPLING);
                         entries.add(ModBlocks.BINARY_LEAVES);
@@ -254,7 +255,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BINARY_TRAPDOOR);
                         entries.add(ModBlocks.BINARY_FENCE);
                         entries.add(ModBlocks.BINARY_FENCE_GATE);
-
+                        */
 
                         entries.add(ModBlocks.FADED_CACTUS);
 
