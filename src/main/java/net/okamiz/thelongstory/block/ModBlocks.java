@@ -564,7 +564,7 @@ public class ModBlocks {
 
 
 
-    // ADVANCED BLOCKS ------------------
+    // ADVANCED BLOCKS -------------------
 
     public static final Block LOCKED_AMETHYST_CORE = registerBlock("locked_amethyst_core",
             new LockedAmethystCoreBlock(FabricBlockSettings.copyOf(Blocks.BEDROCK)));
