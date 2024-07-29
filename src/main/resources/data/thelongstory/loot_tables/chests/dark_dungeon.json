@@ -3,102 +3,201 @@
   "pools": [
     {
       "rolls": {
-        "min": 1,
-        "max": 7
+        "type": "minecraft:uniform",
+        "min": 3,
+        "max": 10
       },
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 5
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelongstory:thestone_dust",
           "weight": 20,
-          "name": "minecraft:rotten_flesh"
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              },
+              "add": false
+            }
+          ]
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
-          "name": "thelongstory:infested_flesh"
-        }
-      ]
-    },
-    {
-      "rolls": {
-        "min": 0,
-        "max": 2
-      },
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "thelongstory:emerald_apple"
+          "name": "thelongstory:bone_fragments",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              },
+              "add": false
+            }
+          ]
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
-          "name": "thelongstory:redstone_apple"
+          "name": "minecraft:iron_sword",
+          "weight": 2,
+          "quality": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sword of the Hermit\",\"italic\":false,\"color\":\"#ccffff\"}]'},Enchantments:[{lvl:2,id:looting},{lvl:3,id:smite},{lvl:2,id:sweeping},{lvl:2,id:unbreaking}]}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
-          "name": "thelongstory:iron_apple"
+          "name": "minecraft:iron_sword",
+          "weight": 2,
+          "quality": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Sword of the Damned\",\"italic\":false,\"color\":\"#ffffcc\"}]'},Enchantments:[{lvl:2,id:looting},{lvl:2,id:sharpness},{lvl:1,id:unbreaking}]}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
-          "name": "thelongstory:amethyst_apple"
-        }
-      ]
-    },
-    {
-      "rolls": {
-        "min": 0,
-        "max": 5
-      },
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 15,
-          "name": "minecraft:iron_ingot"
+          "name": "minecraft:diamond_helmet",
+          "weight": 2,
+          "quality": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Dark Lord\\'s Helmet\",\"italic\":false,\"color\":\"red\"}]'},Enchantments:[{lvl:3,id:protection},{lvl:2,id:respiration},{lvl:5,id:unbreaking}]}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:gold_ingot"
+          "name": "minecraft:diamond_leggings",
+          "weight": 2,
+          "quality": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Dark Lord\\'s Leggings\",\"italic\":false,\"color\":\"red\"}]'},Enchantments:[{lvl:3,id:protection},{lvl:2,id:swift_sneak},{lvl:5,id:unbreaking}]}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
-          "name": "minecraft:diamond"
-        }
-      ]
-    },
-    {
-      "rolls": {
-        "min": 0,
-        "max": 3
-      },
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:moss_block"
-        }
-      ]
-    },
-    {
-      "rolls": {
-        "min": 0,
-        "max": 7
-      },
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:iron_nugget"
+          "name": "minecraft:diamond_boots",
+          "weight": 2,
+          "quality": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Dark Lord\\'s Boots\",\"italic\":false,\"color\":\"red\"}]'},Enchantments:[{lvl:3,id:feather_falling},{lvl:3,id:protection},{lvl:1,id:soul_speed},{lvl:5,id:unbreaking}]}"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
-          "name": "minecraft:gold_nugget"
+          "name": "minecraft:diamond_chestplate",
+          "weight": 2,
+          "quality": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Dark Lord\\'s Chesplate\",\"italic\":false,\"color\":\"red\"}]'},Enchantments:[{lvl:3,id:protection},{lvl:2,id:thorns},{lvl:5,id:unbreaking}]}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelongstory:carbon_ingot",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 7
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelongstory:command_system"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelongstory:soul_container_regeneration",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelongstory:soul_container_resistance",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "thelongstory:soul_container_haste",
+          "weight": 1
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "minecraft:chests/village/village_weaponsmith"
 }
