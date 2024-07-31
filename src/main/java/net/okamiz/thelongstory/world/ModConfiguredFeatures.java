@@ -186,9 +186,9 @@ public class ModConfiguredFeatures {
 
         register(context, BINARY_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.BINARY_LOG),
-                new BinaryTrunkPlacer(6, 7, 5),
+                new StraightTrunkPlacer(5, 2, 0),
                 BlockStateProvider.of(ModBlocks.BINARY_LEAVES),
-                new BinaryFoliagePlacer(15, ConstantIntProvider.create(-9), ConstantIntProvider.create(4)),
+                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
     }

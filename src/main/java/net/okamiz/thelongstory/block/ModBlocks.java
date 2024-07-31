@@ -474,7 +474,7 @@ public class ModBlocks {
     public static final Block BINARY_SAPLING = registerBlock("binary_sapling",
             new SaplingBlock(new BinarySaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block BINARY_LEAVES = registerBlock("binary_leaves",
-            new BinaryLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque().luminance(6)));
+            new BinaryLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
 
     public static final Block BINARY_LOG = registerBlock("binary_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(3f)));
