@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thelongstory:binary_grass_block",
+    "thelongstory:binary_dirt",
+    "minecraft:dirt",
+    "minecraft:grass_block"
+  ]
+}

@@ -3,6 +3,8 @@
   "values": [
     "thelongstory:torch_pink_sand",
     "thelongstory:torch_sand",
-    "thelongstory:crushed_bones_block"
+    "thelongstory:crushed_bones_block",
+    "thelongstory:binary_dirt",
+    "thelongstory:binary_grass_block"
   ]
 }

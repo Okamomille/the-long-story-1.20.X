@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "thelongstory:block/binary_tall_grass_bottom"
+    },
+    "half=upper": {
+      "model": "thelongstory:block/binary_tall_grass_top"
+    }
+  }
+}

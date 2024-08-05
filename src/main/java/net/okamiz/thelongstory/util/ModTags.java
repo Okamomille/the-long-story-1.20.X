@@ -11,7 +11,8 @@ import net.okamiz.thelongstory.TheLongStory;
 public class ModTags {
     public static class Blocks
     {
-
+        public static final TagKey<Block> BINARY_TREE_GROWABLE =
+                createTag("binary_tree_growable");
         public static final TagKey<Block> DEEP_ICE_REPLACABLES =
                 createTag("deep_ice_replacable");
 

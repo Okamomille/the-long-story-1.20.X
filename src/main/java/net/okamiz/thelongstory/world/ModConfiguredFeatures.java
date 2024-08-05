@@ -189,7 +189,7 @@ public class ModConfiguredFeatures {
                 new StraightTrunkPlacer(5, 2, 0),
                 BlockStateProvider.of(ModBlocks.BINARY_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(ModBlocks.BINARY_DIRT)).build());
 
     }
 

@@ -39,6 +39,9 @@ public class RenderCutout {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BINARY_SAPLING, RenderLayer.getCutout());
 
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BINARY_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BINARY_TALL_GRASS, RenderLayer.getCutout());
+
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FADED_CACTUS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TORN_BUSH, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TORN_FLOWER, RenderLayer.getCutout());

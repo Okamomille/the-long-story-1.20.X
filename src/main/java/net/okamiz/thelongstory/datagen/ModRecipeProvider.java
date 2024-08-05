@@ -1304,7 +1304,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
+        createStairsRecipe(ModBlocks.BINARY_STONE_STAIRS, Ingredient.ofItems(ModBlocks.BINARY_STONE))
+                .criterion(hasItem(ModBlocks.BINARY_STONE),conditionsFromItem(ModBlocks.BINARY_STONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BINARY_STONE_STAIRS)));
 
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.BINARY_STONE_SLAB, Ingredient.ofItems(ModBlocks.BINARY_STONE))
+                .criterion(hasItem(ModBlocks.BINARY_STONE),conditionsFromItem(ModBlocks.BINARY_STONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BINARY_STONE_SLAB)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.BINARY_STONE_WALL, 4)
+                .pattern("OOO")
+                .pattern("OOO")
+                .input('O', ModBlocks.BINARY_STONE)
+                .criterion(hasItem(ModBlocks.BINARY_STONE),conditionsFromItem(ModBlocks.BINARY_STONE))
+                .offerTo(exporter, new Identifier("binary_stone_wall_recipe"));
 
 
         createStairsRecipe(ModBlocks.FLUORITE_BLOCK_STAIRS, Ingredient.ofItems(ModBlocks.FLUORITE_BLOCK))

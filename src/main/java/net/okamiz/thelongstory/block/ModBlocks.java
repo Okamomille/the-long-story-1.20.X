@@ -472,7 +472,7 @@ public class ModBlocks {
 
 
     public static final Block BINARY_SAPLING = registerBlock("binary_sapling",
-            new SaplingBlock(new BinarySaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+            new BinarySaplingBlock(new BinarySaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block BINARY_LEAVES = registerBlock("binary_leaves",
             new BinaryLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
 
@@ -514,6 +514,27 @@ public class ModBlocks {
 
 
 
+
+
+
+
+
+
+    public static final Block BINARY_GRASS_BLOCK = registerBlock("binary_grass_block",
+            new BinaryGrassBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK)));
+
+    public static final Block BINARY_DIRT = registerBlock("binary_dirt",
+            new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
+    public static final Block BINARY_STONE = registerBlock("binary_stone",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block BINARY_STONE_STAIRS = registerBlock("binary_stone_stairs",
+            new StairsBlock(ModBlocks.BINARY_STONE.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.BINARY_STONE)));
+    public static final Block BINARY_STONE_SLAB = registerBlock("binary_stone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.BINARY_STONE)));
+    public static final Block BINARY_STONE_WALL = registerBlock("binary_stone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.BINARY_STONE)));
+
+
     // BUSHES ----
 
     public static final Block TORN_BUSH = registerBlock("torn_bush",
@@ -522,7 +543,15 @@ public class ModBlocks {
 
     // GRASSES ----
 
+    public static final Block BINARY_GRASS = registerBlock("binary_grass",
+            new BinaryPlantBlock(FabricBlockSettings.copyOf(Blocks.GRASS).nonOpaque().noCollision()));
+    public static final Block BINARY_TALL_GRASS = registerBlock("binary_tall_grass",
+            new BinaryTallPlantBlock(FabricBlockSettings.copyOf(Blocks.TALL_GRASS).nonOpaque().noCollision()));
+
     // FLOWERS ----
+
+    public static final Block BULBO_FLOWER = registerBlock("bulbo_flower",
+            new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.LILAC).nonOpaque().noCollision()));
     public static final Block TORN_FLOWER = registerBlock("torn_flower",
             new FlowerBlock(StatusEffects.HASTE, 30,
                     FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID).nonOpaque().noCollision()));
@@ -595,11 +624,6 @@ public class ModBlocks {
 
 
     // ----------------
-
-
-
-    public static final Block BULBO_FLOWER = registerBlock("bulbo_flower",
-            new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.LILAC)));
 
 
 

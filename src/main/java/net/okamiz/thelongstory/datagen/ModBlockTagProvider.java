@@ -21,6 +21,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
 
+        getOrCreateTagBuilder(ModTags.Blocks.BINARY_TREE_GROWABLE)
+                .add(ModBlocks.BINARY_GRASS_BLOCK)
+                .add(ModBlocks.BINARY_DIRT)
+                .add(Blocks.DIRT)
+                .add(Blocks.GRASS_BLOCK);
 
         getOrCreateTagBuilder(ModTags.Blocks.DEEP_ICE_REPLACABLES)
                 .add(ModBlocks.DEEP_ICE);
@@ -44,6 +49,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
                 .add(ModBlocks.STONED_MAGMA_BLOCK)
                 .add(ModBlocks.COLD_STONED_MAGMA_BLOCK)
+                .add(ModBlocks.BINARY_STONE)
+                .add(ModBlocks.BINARY_STONE_SLAB)
+                .add(ModBlocks.BINARY_STONE_STAIRS)
+                .add(ModBlocks.BINARY_STONE_WALL)
 
 
 
@@ -142,6 +151,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.TORCH_PINK_SAND)
                 .add(ModBlocks.TORCH_SAND)
                 .add(ModBlocks.CRUSHED_BONES_BLOCK)
+                .add(ModBlocks.BINARY_DIRT)
+                .add(ModBlocks.BINARY_GRASS_BLOCK)
         ;
 
 

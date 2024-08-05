@@ -48,6 +48,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STONED_MAGMA_BLOCK);
 
 
+        addDrop(ModBlocks.BINARY_DIRT);
+        addDrop(ModBlocks.BINARY_STONE);
+        addDrop(ModBlocks.BINARY_STONE_STAIRS);
+        addDrop(ModBlocks.BINARY_STONE_WALL);
+        slabDrops(ModBlocks.BINARY_STONE_SLAB);
+
+
+
+
         addDrop(ModBlocks.TORCH_STONE);
         addDrop(ModBlocks.TORCH_SAND);
         addDrop(ModBlocks.TORCH_PINK_SAND);

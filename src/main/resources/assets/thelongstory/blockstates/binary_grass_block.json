@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "snowy=false": [
+      {
+        "model": "thelongstory:block/binary_grass_block"
+      }
+    ],
+    "snowy=true": [
+      {
+        "model": "thelongstory:block/binary_grass_block"
+      }
+    ]
+  }
+}

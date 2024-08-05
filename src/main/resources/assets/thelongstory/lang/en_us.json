@@ -206,6 +206,13 @@
   "block.thelongstory.stoned_magma_block" : "Stoned Magma Block",
   "block.thelongstory.cold_stoned_magma_block" : "Cold Stoned Magma Block",
 
+  "block.thelongstory.binary_grass_block" : "Binary Grass Block",
+  "block.thelongstory.binary_dirt" : "Binary Dirt",
+  "block.thelongstory.binary_stone" : "Binary Stone",
+  "block.thelongstory.binary_stone_slab" : "Binary Stone Slab",
+  "block.thelongstory.binary_stone_stairs" : "Binary Stone Stairs",
+  "block.thelongstory.binary_stone_wall" : "Binary Stone Wall",
+
 
   "block.thelongstory.torch_sand" : "Torch Sand",
   "block.thelongstory.torch_pink_sand" : "Torch Pink Sand",
@@ -433,6 +440,9 @@
   "block.thelongstory.pure_glitched_block" : "Pure Glitched Block",
 
 
+
+  "block.thelongstory.binary_grass" : "Binary Grass",
+  "block.thelongstory.binary_tall_grass" : "Binary Tall Grass",
 
   "block.thelongstory.faded_cactus" : "Faded Cactus",
 

@@ -83,6 +83,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FROSTED_ICE);
                         entries.add(ModBlocks.TORCH_SAND);
                         entries.add(ModBlocks.TORCH_PINK_SAND);
+                        entries.add(ModBlocks.BINARY_GRASS_BLOCK);
+                        entries.add(ModBlocks.BINARY_DIRT);
+                        entries.add(ModBlocks.BINARY_STONE);
+                        entries.add(ModBlocks.BINARY_STONE_SLAB);
+                        entries.add(ModBlocks.BINARY_STONE_STAIRS);
+                        entries.add(ModBlocks.BINARY_STONE_WALL);
 
                         entries.add(ModBlocks.CARBON_BLOCK);
                         entries.add(ModBlocks.CHISELED_CARBON_BLOCK);
@@ -238,7 +244,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.KIWI_FENCE);
                         entries.add(ModBlocks.KIWI_FENCE_GATE);
 
-                        /*
+
                         //BINARY
                         entries.add(ModBlocks.BINARY_SAPLING);
                         entries.add(ModBlocks.BINARY_LEAVES);
@@ -255,7 +261,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BINARY_TRAPDOOR);
                         entries.add(ModBlocks.BINARY_FENCE);
                         entries.add(ModBlocks.BINARY_FENCE_GATE);
-                        */
+
+
+                        entries.add(ModBlocks.BINARY_GRASS);
+                        entries.add(ModBlocks.BINARY_TALL_GRASS);
 
                         entries.add(ModBlocks.FADED_CACTUS);
 

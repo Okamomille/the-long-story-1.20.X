@@ -51,6 +51,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STONED_MAGMA_BLOCK);
 
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BINARY_DIRT);
+
+
         blockStateModelGenerator.registerLog(ModBlocks.DEEPSLATE_PILLAR).log(ModBlocks.DEEPSLATE_PILLAR).wood(ModBlocks.DEEPSLATE_PILLAR_ALL);
         blockStateModelGenerator.registerLog(ModBlocks.FLUORITE_PILLAR).log(ModBlocks.FLUORITE_PILLAR).wood(ModBlocks.FLUORITE_PILLAR_ALL);
 
@@ -140,6 +143,11 @@ public class ModModelProvider extends FabricModelProvider {
         labTilesPool.stairs(ModBlocks.LAB_TILES_STAIRS);
         labTilesPool.slab(ModBlocks.LAB_TILES_SLAB);
         labTilesPool.wall(ModBlocks.LAB_TILES_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool binaryStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BINARY_STONE);
+        labTilesPool.stairs(ModBlocks.BINARY_STONE_STAIRS);
+        labTilesPool.slab(ModBlocks.BINARY_STONE_SLAB);
+        labTilesPool.wall(ModBlocks.BINARY_STONE_WALL);
 
         BlockStateModelGenerator.BlockTexturePool mossyLabTilesPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CORRUPTED_LAB_TILES);
         mossyLabTilesPool.stairs(ModBlocks.CORRUPTED_LAB_TILES_STAIRS);
@@ -251,6 +259,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.BINARY_TRAPDOOR);
 
 //--------------------------------------------------------------------------------------
+
+        blockStateModelGenerator.registerTintableCross(ModBlocks.BINARY_GRASS, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerTintableCross(ModBlocks.TORN_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(ModBlocks.TORN_FLOWER, BlockStateModelGenerator.TintType.NOT_TINTED);
