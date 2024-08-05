@@ -33,7 +33,7 @@
     {
       "weight": 6,
       "element": {
-        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_corridor_4",
+        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_corridor_big",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -42,7 +42,7 @@
     {
       "weight": 6,
       "element": {
-        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_room_1",
+        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_corridor_x",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -51,7 +51,7 @@
     {
       "weight": 6,
       "element": {
-        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_room_2",
+        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_room_purple",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -60,7 +60,7 @@
     {
       "weight": 6,
       "element": {
-        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_room_3",
+        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_room_library",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -69,7 +69,7 @@
     {
       "weight": 6,
       "element": {
-        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_room_4",
+        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_boss_room",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -78,43 +78,7 @@
     {
       "weight": 6,
       "element": {
-        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_room_5",
-        "processors": "minecraft:empty",
-        "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 6,
-      "element": {
-        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_room_6",
-        "processors": "minecraft:empty",
-        "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 6,
-      "element": {
-        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_room_7",
-        "processors": "minecraft:empty",
-        "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 6,
-      "element": {
-        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_room_8",
-        "processors": "minecraft:empty",
-        "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 6,
-      "element": {
-        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_room_9",
+        "location": "thelongstory:amethyst_dungeon/amethyst_dungeon_boss_room_2",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
