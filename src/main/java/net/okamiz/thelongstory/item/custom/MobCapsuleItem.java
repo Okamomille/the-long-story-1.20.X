@@ -1,6 +1,5 @@
 package net.okamiz.thelongstory.item.custom;
 
-import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -21,7 +20,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
-import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.entity.custom.AmethystGolemEntity;
 import org.jetbrains.annotations.Nullable;
 

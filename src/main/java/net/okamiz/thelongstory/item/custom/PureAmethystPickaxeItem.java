@@ -2,7 +2,6 @@ package net.okamiz.thelongstory.item.custom;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Rarity;
 

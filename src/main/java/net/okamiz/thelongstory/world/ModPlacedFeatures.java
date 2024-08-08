@@ -10,10 +10,10 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
-import net.minecraft.world.gen.placementmodifier.*;
+import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.ModBlocks;
-
 
 import java.util.List;
 

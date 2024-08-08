@@ -6,13 +6,10 @@ package net.okamiz.thelongstory.entity.client;
 
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
-import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.entity.Entity;
 import net.okamiz.thelongstory.entity.animation.ModAnimations;
 import net.okamiz.thelongstory.entity.custom.BumboEntity;
-import net.okamiz.thelongstory.entity.custom.TookiEntity;
 
 public class BumboModel<T extends BumboEntity> extends SinglePartEntityModel<T> {
 	private final ModelPart base;

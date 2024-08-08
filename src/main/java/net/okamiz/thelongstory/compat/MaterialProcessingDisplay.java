@@ -6,7 +6,6 @@ import me.shedaniel.rei.api.common.entry.EntryIngredient;
 import me.shedaniel.rei.api.common.util.EntryIngredients;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import net.okamiz.thelongstory.recipe.MaterialProcessingRecipe;
-import net.okamiz.thelongstory.screen.MaterialProcessorScreen;
 
 import java.util.ArrayList;
 import java.util.Collections;

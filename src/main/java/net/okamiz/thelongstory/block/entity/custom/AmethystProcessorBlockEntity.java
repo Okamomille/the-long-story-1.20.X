@@ -7,7 +7,6 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
-import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -28,12 +27,9 @@ import net.okamiz.thelongstory.block.custom.AmethystProcessorBlock;
 import net.okamiz.thelongstory.block.entity.ImplementedInventory;
 import net.okamiz.thelongstory.block.entity.ModBlockEntities;
 import net.okamiz.thelongstory.item.ModItems;
-import net.okamiz.thelongstory.recipe.MaterialProcessingRecipe;
 import net.okamiz.thelongstory.screen.AmethystProcessorScreenHandler;
 import org.jetbrains.annotations.Nullable;
 import team.reborn.energy.api.base.SimpleEnergyStorage;
-
-import java.util.Optional;
 
 public class AmethystProcessorBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
 

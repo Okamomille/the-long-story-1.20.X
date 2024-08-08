@@ -7,8 +7,8 @@ import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.okamiz.thelongstory.entity.custom.*;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.entity.custom.*;
 
 public class ModEntities {
     public static void registerModEntities() {

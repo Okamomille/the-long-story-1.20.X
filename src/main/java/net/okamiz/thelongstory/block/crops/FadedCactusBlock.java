@@ -1,6 +1,9 @@
 package net.okamiz.thelongstory.block.crops;
 
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.CactusBlock;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.registry.tag.BlockTags;

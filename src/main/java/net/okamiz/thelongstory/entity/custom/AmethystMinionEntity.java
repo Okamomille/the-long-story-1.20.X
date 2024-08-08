@@ -18,7 +18,6 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.entity.ai.AmethystMinionAttackGoal;
-import net.okamiz.thelongstory.entity.ai.TrepasseurAttackGoal;
 
 public class AmethystMinionEntity extends ZombieEntity {
 

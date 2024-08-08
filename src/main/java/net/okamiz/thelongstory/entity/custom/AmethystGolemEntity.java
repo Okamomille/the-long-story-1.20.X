@@ -11,25 +11,20 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
-import net.minecraft.entity.mob.*;
+import net.minecraft.entity.mob.HostileEntity;
+import net.minecraft.entity.mob.SpellcastingIllagerEntity;
+import net.minecraft.entity.mob.VexEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
-import net.minecraft.util.function.ValueLists;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.entity.ai.AmethystGolemAttackGoal;
-import net.okamiz.thelongstory.entity.ai.TrepasseurAttackGoal;
 import net.okamiz.thelongstory.item.ModItems;
 import net.okamiz.thelongstory.sound.ModSounds;
-import org.jetbrains.annotations.Nullable;
-
-import java.util.function.IntFunction;
-import java.util.function.ToIntFunction;
 
 public class AmethystGolemEntity extends SpellcastingIllagerEntity {
     private PlayerEntity player;

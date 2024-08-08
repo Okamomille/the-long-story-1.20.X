@@ -10,8 +10,8 @@ import net.okamiz.thelongstory.particles.TSLParticles.BinaryLeavesParticle;
 import net.okamiz.thelongstory.particles.TSLParticles.EgroricLeavesParticle;
 import net.okamiz.thelongstory.particles.TSLParticles.KiwiLeavesParticle;
 import net.okamiz.thelongstory.screen.AmethystProcessorScreen;
-import net.okamiz.thelongstory.screen.ModScreenHandlers;
 import net.okamiz.thelongstory.screen.MaterialProcessorScreen;
+import net.okamiz.thelongstory.screen.ModScreenHandlers;
 import net.okamiz.thelongstory.screen.RedCoalGeneratorScreen;
 import net.okamiz.thelongstory.util.ModModelPredicateProvider;
 

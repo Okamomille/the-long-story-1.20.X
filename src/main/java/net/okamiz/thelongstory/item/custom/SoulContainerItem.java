@@ -18,7 +18,6 @@ import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.item.ModItems;
 import org.jetbrains.annotations.Nullable;
-import org.spongepowered.asm.mixin.injection.At;
 
 import java.util.List;
 

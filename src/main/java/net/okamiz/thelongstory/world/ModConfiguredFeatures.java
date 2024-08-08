@@ -1,6 +1,5 @@
 package net.okamiz.thelongstory.world;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -14,24 +13,18 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
-import net.minecraft.world.gen.foliage.LargeOakFoliagePlacer;
 import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.minecraft.world.gen.trunk.LargeOakTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.ModBlocks;
 import net.okamiz.thelongstory.util.ModTags;
-import net.okamiz.thelongstory.world.tree.custom.Binary.BinaryFoliagePlacer;
-import net.okamiz.thelongstory.world.tree.custom.Binary.BinaryTrunkPlacer;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricFoliagePlacer;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricTrunkPlacer;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastFoliagePlacer;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastTrunkPlacer;
-import org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter;
 
 import java.util.List;
-import java.util.OptionalInt;
 
 public class ModConfiguredFeatures {
 

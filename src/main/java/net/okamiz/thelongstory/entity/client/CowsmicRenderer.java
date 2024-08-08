@@ -7,7 +7,6 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.entity.custom.CowsmicEntity;
-import org.joml.Vector3f;
 
 public class CowsmicRenderer extends MobEntityRenderer<CowsmicEntity, CowsmicModel<CowsmicEntity>> {
 

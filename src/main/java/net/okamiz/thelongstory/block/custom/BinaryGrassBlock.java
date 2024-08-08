@@ -1,6 +1,8 @@
 package net.okamiz.thelongstory.block.custom;
 
-import net.minecraft.block.*;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Fertilizable;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.server.world.ServerWorld;

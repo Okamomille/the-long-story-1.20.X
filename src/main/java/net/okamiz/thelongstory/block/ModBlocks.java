@@ -14,7 +14,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.crops.*;
 import net.okamiz.thelongstory.block.custom.*;
-import net.okamiz.thelongstory.block.custom.greffed_command_blocks.*;
+import net.okamiz.thelongstory.block.custom.greffed_command_blocks.GreffedCommandSystemBlock;
 import net.okamiz.thelongstory.block.custom.leaves_blocks.BinaryLeavesBlock;
 import net.okamiz.thelongstory.block.custom.leaves_blocks.EgroricLeavesBlock;
 import net.okamiz.thelongstory.block.custom.leaves_blocks.KiwiLeavesBlock;

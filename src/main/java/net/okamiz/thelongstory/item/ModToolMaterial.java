@@ -3,7 +3,6 @@ package net.okamiz.thelongstory.item;
 import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.registry.tag.ItemTags;
 import net.okamiz.thelongstory.block.ModBlocks;
 
 import java.util.function.Supplier;

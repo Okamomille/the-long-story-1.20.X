@@ -5,8 +5,8 @@ import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
-import net.okamiz.thelongstory.entity.custom.TickelerEntity;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.entity.custom.TickelerEntity;
 
 public class TickelerRenderer extends MobEntityRenderer<TickelerEntity, TickelerModel<TickelerEntity>> {
     private static final Identifier TEXTURE = new Identifier(TheLongStory.MOD_ID, "textures/entity/tickeler.png");

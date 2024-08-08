@@ -5,8 +5,8 @@ import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
-import net.okamiz.thelongstory.entity.custom.TrepasseurEntity;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.entity.custom.TrepasseurEntity;
 
 public class TrepasseurRenderer extends MobEntityRenderer<TrepasseurEntity, TrepasseurModel<TrepasseurEntity>> {
     private static final Identifier TEXTURE = new Identifier(TheLongStory.MOD_ID, "textures/entity/trepasseur.png");

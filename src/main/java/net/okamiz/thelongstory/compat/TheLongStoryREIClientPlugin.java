@@ -8,7 +8,6 @@ import me.shedaniel.rei.api.client.registry.screen.ScreenRegistry;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import net.okamiz.thelongstory.block.ModBlocks;
 import net.okamiz.thelongstory.recipe.MaterialProcessingRecipe;
-import net.okamiz.thelongstory.screen.AmethystProcessorScreen;
 import net.okamiz.thelongstory.screen.MaterialProcessorScreen;
 
 public class TheLongStoryREIClientPlugin implements REIClientPlugin {

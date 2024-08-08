@@ -3,7 +3,6 @@ package net.okamiz.thelongstory.util;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
-import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.item.ModItems;
 
 public class ModModelPredicateProvider {

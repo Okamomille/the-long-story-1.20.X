@@ -1,6 +1,5 @@
 package net.okamiz.thelongstory.item.custom;
 
-import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

@@ -2,15 +2,8 @@ package net.okamiz.thelongstory.effect;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.AttributeContainer;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.damage.DamageType;
-import net.minecraft.entity.damage.DamageTypes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.registry.entry.RegistryEntry;
-import net.okamiz.thelongstory.damage.ModDamageTypes;
 
 public class InfectedEffect extends StatusEffect {
 

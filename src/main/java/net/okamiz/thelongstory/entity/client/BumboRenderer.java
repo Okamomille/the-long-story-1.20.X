@@ -7,7 +7,6 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.entity.custom.BumboEntity;
-import net.okamiz.thelongstory.entity.custom.TookiEntity;
 
 public class BumboRenderer extends MobEntityRenderer<BumboEntity, BumboModel<BumboEntity>> {
 

@@ -3,34 +3,18 @@ package net.okamiz.thelongstory.entity.custom;
 import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.mob.AbstractSkeletonEntity;
 import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
-import net.minecraft.entity.passive.TurtleEntity;
-import net.minecraft.entity.passive.WolfEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.DyeItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.DyeColor;
-import net.minecraft.util.Hand;
 import net.minecraft.world.World;
-import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.UUID;
 
 public class BumboEntity extends PassiveEntity {
 

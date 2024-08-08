@@ -15,7 +15,6 @@ import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.ModBlocks;
 
-import javax.swing.*;
 import java.util.LinkedList;
 import java.util.List;
 

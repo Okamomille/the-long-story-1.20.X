@@ -2,10 +2,12 @@ package net.okamiz.thelongstory.particles.TSLParticles;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.particle.*;
+import net.minecraft.client.particle.AnimatedParticle;
+import net.minecraft.client.particle.Particle;
+import net.minecraft.client.particle.ParticleFactory;
+import net.minecraft.client.particle.SpriteProvider;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.particle.DefaultParticleType;
-import net.minecraft.particle.ParticleEffect;
 
 @Environment(value=EnvType.CLIENT)
 public class BinaryLeavesParticle

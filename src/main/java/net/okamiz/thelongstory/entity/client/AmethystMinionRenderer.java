@@ -7,7 +7,6 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.entity.custom.AmethystMinionEntity;
-import net.okamiz.thelongstory.entity.custom.TrepasseurEntity;
 
 public class AmethystMinionRenderer extends MobEntityRenderer<AmethystMinionEntity, AmethystMinionModel<AmethystMinionEntity>> {
     private static final Identifier TEXTURE = new Identifier(TheLongStory.MOD_ID, "textures/entity/amethyst_minion.png");
