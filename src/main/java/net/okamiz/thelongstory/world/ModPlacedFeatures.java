@@ -42,6 +42,8 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> PINK_PHYGELUS_PLACED_KEY = registerKey("pink_phygelus_placed");
     public static final RegistryKey<PlacedFeature> YELLOW_PHYGELUS_PLACED_KEY = registerKey("yellow_phygelus_placed");
     public static final RegistryKey<PlacedFeature> BLUE_OSPET_PLACED_KEY = registerKey("blue_ospet_placed");
+    public static final RegistryKey<PlacedFeature> BINARY_GRASS_PLACED_KEY = registerKey("binary_grass_placed");
+    public static final RegistryKey<PlacedFeature> BINARY_TALL_GRASS_PLACED_KEY = registerKey("binary_tall_grass_placed");
 
 
 
@@ -87,6 +89,14 @@ public class ModPlacedFeatures {
 
         register(context, BULBO_FLOWER_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BULBO_FLOWER_KEY),
                 ModPlantsPlacement.modifiersWithCount(1));
+
+
+        register(context, BINARY_TALL_GRASS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BINARY_TALL_GRASS_KEY),
+                ModPlantsPlacement.modifiersWithCount(1));
+
+        register(context, BINARY_GRASS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BINARY_GRASS_KEY),
+                ModPlantsPlacement.modifiersWithCount(18));
+
 
         register(context, TORN_BUSH_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TORN_BUSH_KEY),
                 ModPlantsPlacement.modifiersWithCount(2));
