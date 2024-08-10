@@ -34,9 +34,11 @@ public class ModBiomes {
 
     public static final RegistryKey<Biome> TORCH_DESERT = RegistryKey.of(RegistryKeys.BIOME,
             new Identifier(TheLongStory.MOD_ID, "torch_desert"));
-
     public static final RegistryKey<Biome> TORCH_PINK_DESERT = RegistryKey.of(RegistryKeys.BIOME,
             new Identifier(TheLongStory.MOD_ID, "torch_pink_desert"));
+
+    public static final RegistryKey<Biome> CODE_FOREST = RegistryKey.of(RegistryKeys.BIOME,
+            new Identifier(TheLongStory.MOD_ID, "code_forest"));
 
 
 
@@ -47,6 +49,7 @@ public class ModBiomes {
         context.register(FOREST_OF_MELODY, forestOfMelody(context));
         context.register(TORCH_DESERT, torchDesert(context));
         context.register(TORCH_PINK_DESERT, torchPinkDesert(context));
+        context.register(CODE_FOREST, codeForest(context));
     }
 
     /*
@@ -309,7 +312,49 @@ public class ModBiomes {
                 .build();
     }
 
+    public static Biome codeForest(Registerable<Biome> context) {
+        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
+        //spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.TICKELER, 80, 1, 4));
 
+        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.PARROT, 12, 1, 4));
+        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.BREEDY, 17, 1, 4));
+
+        GenerationSettings.LookupBackedBuilder biomeBuilder =
+                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
+
+        //globalOverworldGeneration(biomeBuilder);
+        //DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
+        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
+        DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
+
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BINARY_PLACED_KEY);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BINARY_GRASS_PLACED_KEY);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BINARY_TALL_GRASS_PLACED_KEY);
+        //biomeBuilder.feature(GenerationStep.Feature.TOP_LAYER_MODIFICATION, );
+        DefaultBiomeFeatures.addForestGrass(biomeBuilder);
+        //DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
+
+
+        //DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
+        //DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
+
+        return new Biome.Builder()
+                .precipitation(true)
+                .downfall(0.6f)
+                .temperature(0.5f)
+                .generationSettings(biomeBuilder.build())
+                .spawnSettings(spawnBuilder.build())
+                .effects((new BiomeEffects.Builder())
+                        .waterColor(4159204)
+                        .waterFogColor(329011)
+                        .skyColor(OverworldBiomeCreator.getSkyColor(0.6f))
+                        .grassColor(11983713)
+                        .foliageColor(11983713)
+                        .fogColor(12638463)
+                        .build())
+                .build();
+    }
 
 
 }

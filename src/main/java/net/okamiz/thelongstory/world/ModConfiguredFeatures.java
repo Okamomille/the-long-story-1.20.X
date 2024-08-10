@@ -51,6 +51,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?,?>> PINK_PHYGELUS_KEY = registryKey("pink_phygelus_key");
     public static final RegistryKey<ConfiguredFeature<?,?>> YELLOW_PHYGELUS_KEY = registryKey("yellow_phygelus_key");
     public static final RegistryKey<ConfiguredFeature<?,?>> BLUE_OSPET_KEY = registryKey("blue_ospet_key");
+    public static final RegistryKey<ConfiguredFeature<?,?>> BINARY_GRASS_KEY = registryKey("binary_grass_key");
+    public static final RegistryKey<ConfiguredFeature<?,?>> BINARY_TALL_GRASS_KEY = registryKey("binary_tall_grass_key");
 
 
 
@@ -119,6 +121,12 @@ public class ModConfiguredFeatures {
         register(context, BULBO_FLOWER_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(5,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BULBO_FLOWER)))));
 
+
+
+        register(context, BINARY_TALL_GRASS_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(5,
+                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BINARY_TALL_GRASS)))));
+        register(context, BINARY_GRASS_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(20,
+                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BINARY_GRASS)))));
 
 
         register(context, TORN_BUSH_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(10,

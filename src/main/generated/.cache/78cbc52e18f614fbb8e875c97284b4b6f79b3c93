@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-05T11:28:33.2544604	The Long Story/Block Loot Tables
+// 1.20.1	2024-08-09T11:29:55.7963115	The Long Story/Block Loot Tables
 a765aa636b50ff4dde7c9bbe337b34d029374379 data\thelongstory\loot_tables\blocks\torch_stone_thestone_ore.json
 bcad02ba01379daadf35620c8f34d4250556bd1d data\thelongstory\loot_tables\blocks\kiwi_trapdoor.json
 8481962a43a31e7c40a4ad2281fd35ffbdcbbd99 data\thelongstory\loot_tables\blocks\corrupted_lab_tiles_stairs.json
@@ -63,8 +63,8 @@ e88fe418201b98a186df2cda7d6e95486f5e626f data\thelongstory\loot_tables\blocks\oa
 1f27746ae1441b76c78d6371e6a640432f1fb53d data\thelongstory\loot_tables\blocks\kiwi_slab.json
 ecc8ccb956dbe280461ee562a2e6edbcd86aadfc data\thelongstory\loot_tables\blocks\binary_door.json
 20bde55381cb9c7ff13387a93221ab4471099bd6 data\thelongstory\loot_tables\blocks\sephin_leaves.json
-c3c7110184108dd2e1963a0ca8d201822fbd478a data\thelongstory\loot_tables\blocks\torch_stone_bricks_stairs.json
 ccac9d34e2343df719232041a82e2f0f8f3a9ac1 data\thelongstory\loot_tables\blocks\egroric_button.json
+c3c7110184108dd2e1963a0ca8d201822fbd478a data\thelongstory\loot_tables\blocks\torch_stone_bricks_stairs.json
 4f4c07e4c4be0ade4796b28c2e5b2dee18d34702 data\thelongstory\loot_tables\blocks\oast_fence_gate.json
 2c2eebed8d4813135a05cfccd2d9aa79571ceeb6 data\thelongstory\loot_tables\blocks\binary_sapling.json
 60bb69bf24a9d975d2f9d44aef12766c9521af1b data\thelongstory\loot_tables\blocks\red_sandstone_pandazite_ore.json
@@ -140,8 +140,8 @@ bba41ebdb097791d1e078c2c5b1febbaf671c683 data\thelongstory\loot_tables\blocks\eg
 a71482c0c25431625b8c5a5b722d711b85d5b9ff data\thelongstory\loot_tables\blocks\stripped_kiwi_log.json
 0b9d2fe8d2c878e377e3cbbd38a072df1ff9683a data\thelongstory\loot_tables\blocks\binary_slab.json
 93aaa9487f84d8d26f1b69dd9be042bd681f159f data\thelongstory\loot_tables\blocks\iced_chiseled_stone_bricks_wall.json
-000389d8b894990e6cc35324016c48ed031cf39e data\thelongstory\loot_tables\blocks\impure_glitched_block.json
 a759fe21d526191874863090b8eb19a274435149 data\thelongstory\loot_tables\blocks\carbon_tiles.json
+000389d8b894990e6cc35324016c48ed031cf39e data\thelongstory\loot_tables\blocks\impure_glitched_block.json
 76c13d9b1dab1d9a51f3dcc75f18deefeb03c1b6 data\thelongstory\loot_tables\blocks\odmentium_ore.json
 99ba7132320e08b1ceb3584d288987e58bd6d6f0 data\thelongstory\loot_tables\blocks\sephin_pressure_plate.json
 1c38ba2919ef9b9408c9dc71dd6ac0c38f8edab7 data\thelongstory\loot_tables\blocks\material_processor.json
