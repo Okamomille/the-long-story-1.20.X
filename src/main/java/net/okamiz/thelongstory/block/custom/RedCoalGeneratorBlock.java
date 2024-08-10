@@ -86,23 +86,6 @@ public class RedCoalGeneratorBlock extends BlockWithEntity{
     }
 
 
-    @Override
-    public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
-        if(!world.isClient()){
-            if(sourceBlock == ModBlocks.MATERIAL_PROCESSOR){
-
-                BlockEntity blockEntity = world.getBlockEntity(pos);
-                if (blockEntity instanceof RedCoalGeneratorBlockEntity) {
-                    RedCoalGeneratorBlockEntity redCoalGeneratorBE = (RedCoalGeneratorBlockEntity) blockEntity;
-
-                    redCoalGeneratorBE.transferEnergy(sourceBlock, sourcePos);
-                }
-            }
-        }
-        super.neighborUpdate(state, world, pos, sourceBlock, sourcePos, notify);
-    }
-
-
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {

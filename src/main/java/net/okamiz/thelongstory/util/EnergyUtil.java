@@ -13,7 +13,7 @@ public class EnergyUtil {
         Direction.stream().forEach(direction -> {
             BlockPos newPos = new BlockPos(pos.getX(), pos.getY(), pos.getZ()).add(direction.getVector());
             EnergyStorage energyTo = EnergyStorage.SIDED.find(world, newPos, null);
-            if (energyFrom!=null && energyTo !=null) {
+            if (energyFrom!=null && energyTo!=null) {
                 try(Transaction transaction = Transaction.openOuter()){
                     EnergyStorageUtil.move(energyFrom, energyTo, amount, transaction);
                     transaction.commit();

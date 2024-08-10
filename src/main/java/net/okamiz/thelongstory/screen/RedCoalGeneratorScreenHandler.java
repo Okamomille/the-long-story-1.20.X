@@ -14,40 +14,23 @@ import net.okamiz.thelongstory.block.entity.custom.RedCoalGeneratorBlockEntity;
 
 public class RedCoalGeneratorScreenHandler extends ScreenHandler {
     private final Inventory inventory;
-    private final PropertyDelegate propertyDelegate;
     public final RedCoalGeneratorBlockEntity blockEntity;
 
     public RedCoalGeneratorScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf) {
-        this(syncId, inventory, inventory.player.getWorld().getBlockEntity(buf.readBlockPos()),
-                new ArrayPropertyDelegate(1));
+        this(syncId, inventory, inventory.player.getWorld().getBlockEntity(buf.readBlockPos()));
     }
 
     public RedCoalGeneratorScreenHandler(int syncId, PlayerInventory playerInventory,
-                                         BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
+                                         BlockEntity blockEntity) {
         super(ModScreenHandlers.RED_COAL_GENERATOR_SCREEN_HANDLER, syncId);
         checkSize(((Inventory) blockEntity), 1);
         this.inventory = (Inventory)blockEntity;
-        this.propertyDelegate = arrayPropertyDelegate;
         this.blockEntity = ((RedCoalGeneratorBlockEntity) blockEntity);
 
         this.addSlot(new Slot(inventory, 0, 54, 50));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
-
-        addProperties(arrayPropertyDelegate);
-    }
-
-    public boolean isCrafting() {
-        return propertyDelegate.get(0) > 0;
-    }
-
-    public int getScaledProgress() {
-        int progress = this.propertyDelegate.get(0);
-        int maxProgress = this.propertyDelegate.get(1);  // Max Progress
-        int progressArrowSize = 17; // This is the width in pixels of your arrow
-
-        return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }
 
     @Override

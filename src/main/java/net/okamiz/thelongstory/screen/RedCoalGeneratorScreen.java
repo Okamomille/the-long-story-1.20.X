@@ -62,15 +62,7 @@ public class RedCoalGeneratorScreen extends HandledScreen<RedCoalGeneratorScreen
 
         context.drawTexture(TEXTURE, x, y, 0, 0, backgroundWidth, backgroundHeight);
 
-        renderProgressArrow(context, x, y);
-
         energyInfoArea.draw(context);
-    }
-
-    private void renderProgressArrow(DrawContext context, int x, int y) {
-        if(handler.isCrafting()) {
-            context.drawTexture(TEXTURE, x + 84, y + 30, 176, 0, 8, handler.getScaledProgress());
-        }
     }
 
     @Override

@@ -1,21 +1,21 @@
 package net.okamiz.thelongstory.block.entity.custom;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.fabricmc.fabric.api.transfer.v1.transaction.Transaction;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.SimpleInventory;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
-import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
@@ -23,6 +23,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import net.okamiz.thelongstory.block.ModBlocks;
 import net.okamiz.thelongstory.block.custom.RedCoalGeneratorBlock;
 import net.okamiz.thelongstory.block.entity.ImplementedInventory;
 import net.okamiz.thelongstory.block.entity.ModBlockEntities;
@@ -37,39 +38,14 @@ import java.util.Optional;
 
 public class RedCoalGeneratorBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
 
-    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
+    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(1, ItemStack.EMPTY);
 
     private static final int INPUT_SLOT = 0;
 
-    protected final PropertyDelegate propertyDelegate;
-    private int progress = 0;
-    private int maxProgress = 72;
+    private int burnTime;
 
     public RedCoalGeneratorBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.RED_COAL_GENERATOR_BLOCK_ENTITY, pos, state);
-        this.propertyDelegate = new PropertyDelegate() {
-            @Override
-            public int get(int index) {
-                return switch (index) {
-                    case 0 -> RedCoalGeneratorBlockEntity.this.progress;
-                    case 1 -> RedCoalGeneratorBlockEntity.this.maxProgress;
-                    default -> 0;
-                };
-            }
-
-            @Override
-            public void set(int index, int value) {
-                switch (index) {
-                    case 0: RedCoalGeneratorBlockEntity.this.progress = value;
-                    case 1: RedCoalGeneratorBlockEntity.this.maxProgress = value;
-                }
-            }
-
-            @Override
-            public int size() {
-                return 2;
-            }
-        };
     }
 
     public final SimpleEnergyStorage energyStorage = new SimpleEnergyStorage(64000, 200, 200){
@@ -120,8 +96,6 @@ public class RedCoalGeneratorBlockEntity extends BlockEntity implements Extended
 
 
 
-
-
     @Override
     public void writeScreenOpeningData(ServerPlayerEntity player, PacketByteBuf buf) {
         buf.writeBlockPos(this.pos);
@@ -135,7 +109,7 @@ public class RedCoalGeneratorBlockEntity extends BlockEntity implements Extended
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new RedCoalGeneratorScreenHandler(syncId, playerInventory, this, propertyDelegate);
+        return new RedCoalGeneratorScreenHandler(syncId, playerInventory, this);
     }
 
     @Override
@@ -147,7 +121,7 @@ public class RedCoalGeneratorBlockEntity extends BlockEntity implements Extended
     protected void writeNbt(NbtCompound nbt) {
         super.writeNbt(nbt);
         Inventories.writeNbt(nbt, inventory);
-        nbt.putInt("red_coal_generator.progress", progress);
+        nbt.putInt("red_coal_generator.burntime", burnTime);
         nbt.putLong("red_coal_generator.energy", energyStorage.amount);
 
     }
@@ -155,114 +129,38 @@ public class RedCoalGeneratorBlockEntity extends BlockEntity implements Extended
     @Override
     public void readNbt(NbtCompound nbt) {
         Inventories.readNbt(nbt, inventory);
-        progress = nbt.getInt("red_coal_generator.progress");
+        burnTime = nbt.getInt("red_coal_generator.burntime");
         energyStorage.amount = nbt.getLong("red_coal_generator.energy");
         super.readNbt(nbt);
     }
 
     public void tick(World world, BlockPos pos, BlockState state) {
+        if(!world.isClient()) {
 
-        fillUpOnEnergy(); // until we have othermods / machines that give us energy
+            if (hasEnergyItemInEnergySlot(INPUT_SLOT) && burnTime==0) {
+                burnTime = FuelRegistry.INSTANCE.get(getItems().get(INPUT_SLOT).getItem());
+                removeStack(INPUT_SLOT, 1);
+            } else if (burnTime > 0 && !(energyStorage.amount >= energyStorage.capacity)) {
+                addEnergy();
+                --burnTime;
+            }
 
-//        if(hasRecipe()) {
-//            increaseCraftingProgress();
-//            markDirty(world, pos, state);
-//
-//            if(hasCraftingFinished()) {
-//                craftItem();
-//                resetProgress();
-//            }
-//        } else {
-//            resetProgress();
-//        }
-//        try(Transaction transaction = Transaction.openOuter()) {
-//            energyStorage.insert(100, transaction);
-//            transaction.commit();
-//        }
-
-        EnergyUtil.distributeEnergy(world, pos, energyStorage, 200);
-        markDirty();
-    }
-
-    private void fillUpOnEnergy() {
-        if(hasEnergyItemInEnergySlot(INPUT_SLOT)){
-            this.removeStack(INPUT_SLOT, 1);
-            addEnergy();
+            EnergyUtil.distributeEnergy(world, pos, energyStorage, 200);
+            markDirty();
         }
     }
 
     private void addEnergy() {
         try(Transaction transaction = Transaction.openOuter()){
-            energyStorage.insert(100, transaction);
+            energyStorage.insert(10, transaction);
             transaction.commit();
         }
     }
 
-
-    public void transferEnergy(Block block, BlockPos pos){
-
-//        BlockEntity blockEntity = world.getBlockEntity(pos);
-//
-//        if (blockEntity instanceof MaterialProcessorBlockEntity) {
-//
-//            MaterialProcessorBlockEntity materialProcessorBlockEntity = (MaterialProcessorBlockEntity) blockEntity;
-//
-//                if(this.energyStorage.amount >= 64){
-//                    try(Transaction transaction = Transaction.openOuter()){
-//                    this.energyStorage.extract(64,transaction);
-//                    materialProcessorBlockEntity.energyStorage.insert(64, transaction);
-//                    transaction.commit();}
-//                }
-//
-//        }
-
-
-    }
-
-
-
     private boolean hasEnergyItemInEnergySlot(int inputSlot) {
-        return this.getStack(inputSlot).getItem() == ModItems.RED_COAL;
+        Item item = this.getStack(inputSlot).getItem();
+        return item == ModItems.RED_COAL || item == ModBlocks.RED_COAL_BLOCK.asItem();
     }
-
-    private void craftItem() {
-        Optional<MaterialProcessingRecipe> recipe = getCurrentRecipe();
-
-        this.removeStack(INPUT_SLOT, 1);
-    }
-
-    private void resetProgress() {
-        this.progress = 0;
-    }
-
-    private boolean hasCraftingFinished() {
-        return this.progress >= this.maxProgress;
-    }
-
-    private void increaseCraftingProgress() {
-        this.progress++;
-    }
-
-    private boolean hasRecipe() {
-        Optional<MaterialProcessingRecipe> recipe = getCurrentRecipe();
-
-        if (recipe.isEmpty()) {
-            return false;
-        } else{
-            return true;
-        }
-
-    }
-
-    private Optional<MaterialProcessingRecipe> getCurrentRecipe() {
-        SimpleInventory inventory = new SimpleInventory((this.size()));
-        for(int i = 0; i < this.size(); i++) {
-            inventory.setStack(i, this.getStack(i));
-        }
-
-        return this.getWorld().getRecipeManager().getFirstMatch(MaterialProcessingRecipe.Type.INSTANCE, inventory, this.getWorld());
-    }
-
 
     @Nullable
     @Override
@@ -270,14 +168,10 @@ public class RedCoalGeneratorBlockEntity extends BlockEntity implements Extended
         return BlockEntityUpdateS2CPacket.create(this);
     }
 
-
     @Override
     public NbtCompound toInitialChunkDataNbt() {
         return createNbt();
     }
-
-
-
 
 }
 
