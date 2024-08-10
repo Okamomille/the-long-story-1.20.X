@@ -7,10 +7,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.ModBlocks;
-import net.okamiz.thelongstory.block.entity.custom.AmethystProcessorBlockEntity;
-import net.okamiz.thelongstory.block.entity.custom.GreffedCommandSystemBlockEntity;
-import net.okamiz.thelongstory.block.entity.custom.MaterialProcessorBlockEntity;
-import net.okamiz.thelongstory.block.entity.custom.RedCoalGeneratorBlockEntity;
+import net.okamiz.thelongstory.block.entity.custom.*;
 import team.reborn.energy.api.EnergyStorage;
 
 public class ModBlockEntities {
@@ -38,6 +35,9 @@ public class ModBlockEntities {
         TheLongStory.LOGGER.info("Registering BlockEntities for " + TheLongStory.MOD_ID);
 
         EnergyStorage.SIDED.registerForBlockEntity(((blockEntity, direction) -> blockEntity.energyStorage), MATERIAL_PROCESSOR_BLOCK_ENTITY);
+        EnergyStorage.SIDED.registerForBlockEntity(((blockEntity, direction) -> blockEntity.energyStorage), RED_COAL_GENERATOR_BLOCK_ENTITY);
+        EnergyStorage.SIDED.registerForBlockEntity(((blockEntity, direction) -> blockEntity.energyStorage), AMETHYST_PROCESSOR_BLOCK_ENTITY);
+
     }
 
 }

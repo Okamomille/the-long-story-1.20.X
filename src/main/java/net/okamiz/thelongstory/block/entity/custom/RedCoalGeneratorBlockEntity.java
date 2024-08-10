@@ -1,6 +1,5 @@
 package net.okamiz.thelongstory.block.entity.custom;
 
-
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.fabricmc.fabric.api.transfer.v1.transaction.Transaction;
 import net.minecraft.block.Block;
@@ -30,6 +29,7 @@ import net.okamiz.thelongstory.block.entity.ModBlockEntities;
 import net.okamiz.thelongstory.item.ModItems;
 import net.okamiz.thelongstory.recipe.MaterialProcessingRecipe;
 import net.okamiz.thelongstory.screen.RedCoalGeneratorScreenHandler;
+import net.okamiz.thelongstory.util.EnergyUtil;
 import org.jetbrains.annotations.Nullable;
 import team.reborn.energy.api.base.SimpleEnergyStorage;
 
@@ -162,21 +162,26 @@ public class RedCoalGeneratorBlockEntity extends BlockEntity implements Extended
 
     public void tick(World world, BlockPos pos, BlockState state) {
 
-
-
         fillUpOnEnergy(); // until we have othermods / machines that give us energy
 
-        if(hasRecipe()) {
-            increaseCraftingProgress();
-            markDirty(world, pos, state);
+//        if(hasRecipe()) {
+//            increaseCraftingProgress();
+//            markDirty(world, pos, state);
+//
+//            if(hasCraftingFinished()) {
+//                craftItem();
+//                resetProgress();
+//            }
+//        } else {
+//            resetProgress();
+//        }
+//        try(Transaction transaction = Transaction.openOuter()) {
+//            energyStorage.insert(100, transaction);
+//            transaction.commit();
+//        }
 
-            if(hasCraftingFinished()) {
-                craftItem();
-                resetProgress();
-            }
-        } else {
-            resetProgress();
-        }
+        EnergyUtil.distributeEnergy(world, pos, energyStorage, 200);
+        markDirty();
     }
 
     private void fillUpOnEnergy() {
@@ -188,7 +193,7 @@ public class RedCoalGeneratorBlockEntity extends BlockEntity implements Extended
 
     private void addEnergy() {
         try(Transaction transaction = Transaction.openOuter()){
-            this.energyStorage.insert(1200,transaction);
+            energyStorage.insert(100, transaction);
             transaction.commit();
         }
     }
@@ -196,20 +201,20 @@ public class RedCoalGeneratorBlockEntity extends BlockEntity implements Extended
 
     public void transferEnergy(Block block, BlockPos pos){
 
-        BlockEntity blockEntity = world.getBlockEntity(pos);
-
-        if (blockEntity instanceof MaterialProcessorBlockEntity) {
-
-            MaterialProcessorBlockEntity materialProcessorBlockEntity = (MaterialProcessorBlockEntity) blockEntity;
-
-                if(this.energyStorage.amount >= 64){
-                    try(Transaction transaction = Transaction.openOuter()){
-                    this.energyStorage.extract(64,transaction);
-                    materialProcessorBlockEntity.energyStorage.insert(64, transaction);
-                    transaction.commit();}
-                }
-
-        }
+//        BlockEntity blockEntity = world.getBlockEntity(pos);
+//
+//        if (blockEntity instanceof MaterialProcessorBlockEntity) {
+//
+//            MaterialProcessorBlockEntity materialProcessorBlockEntity = (MaterialProcessorBlockEntity) blockEntity;
+//
+//                if(this.energyStorage.amount >= 64){
+//                    try(Transaction transaction = Transaction.openOuter()){
+//                    this.energyStorage.extract(64,transaction);
+//                    materialProcessorBlockEntity.energyStorage.insert(64, transaction);
+//                    transaction.commit();}
+//                }
+//
+//        }
 
 
     }
