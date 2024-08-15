@@ -1494,25 +1494,34 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 // TECH BLOCKS
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.RED_COAL_GENERATOR, 1)
+                .pattern("XXX")
+                .pattern("NON")
+                .pattern("XXX")
+                .input('X', ModItems.CARBON_PLATE)
+                .input('O', ModItems.RED_COAL)
+                .input('N', Items.REDSTONE_TORCH)
+                .criterion(hasItem(ModItems.CARBON_PLATE),conditionsFromItem(ModItems.CARBON_PLATE))
+                .offerTo(exporter, new Identifier("red_coal_generator_craft"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.MATERIAL_PROCESSOR, 1)
                 .pattern("XXX")
                 .pattern("NON")
                 .pattern("XXX")
-                .input('X', ModItems.IRON_PLATE)
+                .input('X', ModItems.CARBON_PLATE)
                 .input('O', Items.REDSTONE)
-                .input('N', Items.COBBLED_DEEPSLATE)
-                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .input('N', Items.REDSTONE_BLOCK)
+                .criterion(hasItem(ModItems.CARBON_PLATE),conditionsFromItem(ModItems.CARBON_PLATE))
                 .offerTo(exporter, new Identifier("material_processor_craft"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.AMETHYST_PROCESSOR, 1)
                 .pattern("AXA")
                 .pattern("XOX")
                 .pattern("AXA")
-                .input('X', ModItems.IRON_PLATE)
+                .input('X', ModItems.CARBON_PLATE)
                 .input('O', ModItems.AMETHYST_CORE)
                 .input('A', ModItems.DRONIUM_POWDER)
-                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.CARBON_PLATE),conditionsFromItem(ModItems.CARBON_PLATE))
                 .offerTo(exporter, new Identifier("amethyst_processor_craft"));
 
 

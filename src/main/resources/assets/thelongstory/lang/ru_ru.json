@@ -232,7 +232,7 @@
   "block.thelongstory.simulation_teleporter" : "Телепортер в симуляцию",
   "block.thelongstory.material_processor" : "Процессор материалов",
   "block.thelongstory.amethyst_processor" : "Процессор аметиста",
-  "block.thelongstory.red_coal_generator" : "Генератор красного угля [WIP]",
+  "block.thelongstory.red_coal_generator" : "Генератор красного угля",
 
 
   "block.thelongstory.red_coal_block" : "Красный угольный блок",
