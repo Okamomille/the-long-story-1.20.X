@@ -152,7 +152,7 @@ public class RedCoalGeneratorBlockEntity extends BlockEntity implements Extended
 
     private void addEnergy() {
         try(Transaction transaction = Transaction.openOuter()){
-            energyStorage.insert(10, transaction);
+            energyStorage.insert(2, transaction);
             transaction.commit();
         }
     }
